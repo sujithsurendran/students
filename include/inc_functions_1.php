@@ -1,4 +1,4 @@
-
+<?php
 
 function authenticate_password($admission_no, $password){
 // used in signin 2	
@@ -249,3 +249,5 @@ global $db;
 
 
 }	
+
+?php>

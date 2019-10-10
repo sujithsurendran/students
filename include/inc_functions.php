@@ -79,4 +79,10 @@ $enable_log=true;
 	return($row['ret_val']);
 }
 
+
+
+
+
+
+
 ?>
