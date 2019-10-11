@@ -43,8 +43,14 @@ echo '<div class="row">';
 															<div class="col-sm-2">
 															<button class = "sticky-button" id = "sticky-button" type="submit" onclick="return validate();"   name="btn_update_profile"> Update </button>
 															</div>';
+															
+													//echo '<div class="col-sm-2"><a href="logout.php">Logout</a></div>		
+													//		<div class="col-sm-2">
+													//		<button class = "sticky-button" id = "sticky-button" type="submit" onclick="return validate();"   name="btn_update_profile"> Update </button>
+													//		</div>';
+
 												} else { 
-													echo '<div class="col-sm-2"><a href="signin1.php"><span ' . $page=="Login"?'style="color:grey;"':'' . '>Login</span></a></div>'	;	
+													echo '<div class="col-sm-2"><a href="signin1.php"><span ' . ($page=="signin-1" ? 'style="color:grey;"' : "") . '>Login</span></a></div>'	;	
 												} 
 echo '</div>';	
 		
