@@ -80,9 +80,51 @@ $enable_log=true;
 }
 
 
+function is_registered_user($login){
+// Allows only users with Login	(Admission Number/PF/Unique_id) available in Db to enter
+// Admission Number is entered at the time of admission or initial Import after admissions
+// In the case of Employees, PF or Unique_id(for Guest/contract staff) is manually entered
+
+global $db;
+$is_registered_user = false;
+$result = 0;
+
+// start
+	$sql = $db->prepare("SELECT count(id) FROM users where login = :login");
+	$sql->execute(array( ':login' => $login));
+	
+	$result = $sql->fetchColumn();
+
+		if ($result == 1) {	
+		
+				$sql = $db->prepare("SELECT id, password, login, name FROM users where login = :login");
+				
+				
+				$sql->execute(array( ':login' => $login));
+				$user = $sql->fetch(PDO::FETCH_ASSOC);
+				$_SESSION['user_id'] = NULL;
+				$_SESSION['tmp_user_id'] = $user['id'];				// UserID should be stored in Session only after signin2 
+				$_SESSION['password'] = $user['password'];
+				$_SESSION['login'] = $user['login'];
+				$_SESSION['user_name'] = $user['name'];
+				$is_registered_user = true;
+			
+		}elseif($result == 0) {
+	echo 1;
+			$is_registered_user = NULL;
+			
+		}else{
+	echo 1;	
+				//multiple records error
+				die("Error. Multiple records. Please contact system administrator");				
+		
+		}
 
 
+}
+function add_to_error_messages($msg) {	
+	$_SESSION['error_messages'] = $_SESSION['error_messages'] . "<br />" . $msg;
 
-
+	}
 
 ?>

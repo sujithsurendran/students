@@ -50,7 +50,7 @@ echo '<div class="row">';
 													//		</div>';
 
 												} else { 
-													echo '<div class="col-sm-2"><a href="signin1.php"><span ' . ($page=="signin-1" ? 'style="color:grey;"' : "") . '>Login</span></a></div>'	;	
+													echo '<div class="col-sm-2"><a href="sign-in-1.php"><span ' . ($page=="sign-in-1" ? 'style="color:grey;"' : "") . '>Login</span></a></div>'	;	
 												} 
 echo '</div>';	
 		
