@@ -50,4 +50,14 @@ if(isset($pagination_bar)){
 
 
 </html>
+<?php
+			if(isset($_SESSION['logout']) && $_SESSION['logout']==true)
+			{
+				session_write_close();
+				session_regenerate_id(true);
+	
+				exit();
+				die();
+			}
+?>
 

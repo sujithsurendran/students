@@ -43,7 +43,6 @@ include 'include/page-header-and-menu.php';?>
 
 
 
-
 <?php include 'include/footer.php';
 // DB Connection -------------------------------------- CLOSE
 $conn = null; ?>

@@ -89,42 +89,94 @@ global $db;
 $is_registered_user = false;
 $result = 0;
 
+
+
 // start
 	$sql = $db->prepare("SELECT count(id) FROM users where login = :login");
 	$sql->execute(array( ':login' => $login));
 	
 	$result = $sql->fetchColumn();
 
+
 		if ($result == 1) {	
 		
-				$sql = $db->prepare("SELECT id, password, login, name FROM users where login = :login");
+				$sql = $db->prepare("SELECT id, password, login, name, user_type_id FROM users where login = :login");
 				
 				
 				$sql->execute(array( ':login' => $login));
 				$user = $sql->fetch(PDO::FETCH_ASSOC);
-				$_SESSION['user_id'] = NULL;
-				$_SESSION['tmp_user_id'] = $user['id'];				// UserID should be stored in Session only after signin2 
+				$_SESSION['user_id'] = NULL;				// UserID should be stored in Session only after signin2 
 				$_SESSION['password'] = $user['password'];
 				$_SESSION['login'] = $user['login'];
 				$_SESSION['user_name'] = $user['name'];
+				$_SESSION['user_type_id'] = $user['user_type_id'];
 				$is_registered_user = true;
 			
 		}elseif($result == 0) {
-	echo 1;
+
 			$is_registered_user = NULL;
 			
 		}else{
-	echo 1;	
 				//multiple records error
 				die("Error. Multiple records. Please contact system administrator");				
 		
 		}
-
+return $is_registered_user;
 
 }
 function add_to_error_messages($msg) {	
 	$_SESSION['error_messages'] = $_SESSION['error_messages'] . "<br />" . $msg;
 
-	}
+}
+
+
+function profile() {
+	
+	switch($_SESSION['user_type_id']) {
+		case USER_TYPE_ADMIN:
+
+				include('profile_admin.php');
+				break;
+				
+		case USER_TYPE_STUDENT:
+				include('profile_student.php');
+				break;
+		
+		
+		case USER_TYPE_STAFF:
+				include('profile_staff_in_charge');
+				break;
+		
+		
+		/*case USER_TYPE_TEACHER:
+				redirect('profile_teacher');
+				break;
+		
+		
+		case USER_TYPE_SUPERVISOR:
+				redirect('profile_supervisor');
+				break;
+		
+		
+		case USER_TYPE_DATA_ENTRY_OPERATOR:
+				redirect('profile_data_entry_operator');
+				break;
+		
+
+		case USER_TYPE_PRINCIPAL:
+				redirect('profile_principal');
+				break;
+				
+				*/
+		default:
+				include('profile_student.php');
+				break;
+		}	
+	
+	
+	
+}
+
+
 
 ?>
