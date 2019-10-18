@@ -1,0 +1,348 @@
+error reading list 1 Error opening file /home/sujith/.bluefish/rcfile-2.0: No such file or directory
+
+** (bluefish:3194): WARNING **: no configfile rcfile-2.0, try to convert config files from older versions
+
+config file migration error while reading old file 1:Error opening file /home/sujith/.bluefish/rcfile_v2: No such file or directory
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Possible error in language file nameless-context / nameless-context / t.html.style / c.html.css.main / group / }: id - / pattern } has ends_context=2, but has only 2 parent contexts
+Error in language file nameless-context / nameless-context / group / nameless-tag / hreflang: patterns ("[^"]*"|'[^']*') and '' in context 252 overlap each other
+Error in language file nameless-context / nameless-context / group / nameless-tag / hreflang: patterns ("[^"]*"|'[^']*') and "" in context 252 overlap each other
+Language statistics for PHP from /usr/share/bluefish/bflang//php.bflang2
+reference size         1006.97 Kbytes
+largest table 32358 (  8089.50 Kbytes)
+total tables  75316 ( 18829.00 Kbytes)
+contexts        420 (    19.69 Kbytes)
+matches        9440 (   516.25 Kbytes)
+blocks           14 (     0.44 Kbytes)
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3194): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(nautilus:3122): GLib-GObject-WARNING **: invalid (NULL) pointer instance
+
+(nautilus:3122): GLib-GObject-CRITICAL **: g_signal_handler_disconnect: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(nautilus:3122): GLib-GObject-WARNING **: invalid (NULL) pointer instance
+
+(nautilus:3122): GLib-GObject-CRITICAL **: g_signal_handler_disconnect: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+Gdk-Message: nautilus: Fatal IO error 25 (Inappropriate ioctl for device) on X server :0.
+
+error reading list 1 Error opening file /home/sujith/.bluefish/rcfile-2.0: No such file or directory
+
+** (bluefish:8506): WARNING **: no configfile rcfile-2.0, try to convert config files from older versions
+
+config file migration error while reading old file 1:Error opening file /home/sujith/.bluefish/rcfile_v2: No such file or directory
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Possible error in language file nameless-context / nameless-context / t.html.style / c.html.css.main / group / }: id - / pattern } has ends_context=2, but has only 2 parent contexts
+Error in language file nameless-context / nameless-context / group / nameless-tag / hreflang: patterns ("[^"]*"|'[^']*') and '' in context 252 overlap each other
+Error in language file nameless-context / nameless-context / group / nameless-tag / hreflang: patterns ("[^"]*"|'[^']*') and "" in context 252 overlap each other
+Language statistics for PHP from /usr/share/bluefish/bflang//php.bflang2
+reference size         1006.97 Kbytes
+largest table 32358 (  8089.50 Kbytes)
+total tables  75316 ( 18829.00 Kbytes)
+contexts        420 (    19.69 Kbytes)
+matches        9440 (   516.25 Kbytes)
+blocks           14 (     0.44 Kbytes)
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:8506): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(nautilus:8482): Gtk-CRITICAL **: gtk_widget_get_mapped: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:8482): Gdk-CRITICAL **: gdk_window_is_visible: assertion 'GDK_IS_WINDOW (window)' failed
+
+(nautilus:8482): Gdk-CRITICAL **: gdk_window_show_internal: assertion 'GDK_IS_WINDOW (window)' failed
+
+(nautilus:8482): Gtk-CRITICAL **: gtk_widget_set_opacity: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:8482): Gtk-CRITICAL **: gtk_widget_queue_draw: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:8482): Gtk-CRITICAL **: gtk_widget_get_mapped: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:8482): Gdk-CRITICAL **: gdk_window_is_visible: assertion 'GDK_IS_WINDOW (window)' failed
+
+(nautilus:8482): Gdk-CRITICAL **: gdk_window_show_internal: assertion 'GDK_IS_WINDOW (window)' failed
+
+(nautilus:8482): Gtk-CRITICAL **: gtk_widget_set_opacity: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:8482): Gtk-CRITICAL **: gtk_widget_queue_draw: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:8482): Gtk-CRITICAL **: gtk_widget_get_mapped: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:8482): Gdk-CRITICAL **: gdk_window_is_visible: assertion 'GDK_IS_WINDOW (window)' failed
+
+(nautilus:8482): Gtk-CRITICAL **: gtk_widget_set_opacity: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:8482): Gtk-CRITICAL **: gtk_widget_queue_draw: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:8482): Gtk-CRITICAL **: gtk_widget_get_mapped: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:8482): Gdk-CRITICAL **: gdk_window_is_visible: assertion 'GDK_IS_WINDOW (window)' failed
+
+(nautilus:8482): Gtk-CRITICAL **: gtk_widget_set_opacity: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:8482): Gtk-CRITICAL **: gtk_widget_queue_draw: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:13139): GLib-GIO-CRITICAL **: g_dbus_proxy_new_sync: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(nautilus:13139): GLib-GIO-CRITICAL **: g_dbus_proxy_get_name_owner: assertion 'G_IS_DBUS_PROXY (proxy)' failed
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(nautilus:13139): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:13139): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:13139): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:13139): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:13139): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:13139): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:13139): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+Gdk-Message: nautilus: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(eog:5669): EOG-WARNING **: Failed to open file '/home/sujith/.cache/thumbnails/normal/72d88ec7a1fd39b4a24da007427b1a89.png': No such file or directory
+
+(eog:5669): Gtk-WARNING **: Allocating size to EogStatusbar 0x7fd92f85b4f0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+error: Could not find thumbnail in zip file
+
+(nautilus:2995): GnomeDesktop-WARNING **: Error creating thumbnail for file:///home/sujith/Documents/sujith/IncomeTax/2018-19/VS-income_tax_calculator_fy_2018_19_v4.xlsx: Unrecognized image file format
+
+(evince:7639): Gtk-WARNING **: Allocating size to EvSidebar 0x7ffb1b0424f0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+
+(evince:7721): Gtk-WARNING **: Allocating size to EvSidebar 0x7fa6af2ce4d0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+
+(eog:8186): Gtk-WARNING **: Allocating size to EogStatusbar 0x7fe9a705d4f0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+
+(eog:8186): Gtk-WARNING **: Allocating size to EogStatusbar 0x7fe9a705d4f0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+
+(eog:8186): Gtk-WARNING **: Allocating size to EogStatusbar 0x7fe9a7305880 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+
+(eog:8186): Gtk-WARNING **: Allocating size to EogStatusbar 0x7fe9a7305880 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+
+(eog:8186): Gtk-WARNING **: Allocating size to EogStatusbar 0x7fe9a7305880 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+
+(eog:8186): Gtk-WARNING **: Allocating size to EogStatusbar 0x7fe9a76954d0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
