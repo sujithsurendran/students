@@ -1,0 +1,144 @@
+
+/*   
+if POST
+	if	Validate_fields
+		if registered_user
+			redirect to sign-in-2
+		endif 
+
+		redirect to sign-in-1
+	end
+end
+		
+
+*/
+
+
+<?php // variables ---
+global $arr_alert;
+$_SESSION['signin_attempt'] = 1;
+$err_admission_no =  "";
+$err_captcha = "";
+
+$err_admission_no = "";
+$existing_user = NULL;
+// -----
+// Assuming User has not passed "signin_1"
+// 
+if(!isset($_SESSION['LEVEL_1_CLEAR'])) {
+	$_SESSION['LEVEL_1_CLEAR'] = false;
+}
+
+if(isset($_SESSION['user_id'])) {
+	redirect('profile.php');
+}
+
+
+
+if($_SERVER['REQUEST_METHOD'] == "POST") {
+	
+	if(validate_fields()) {
+
+
+		$existing_user = is_registered_user($admission_no) ;
+		
+
+		
+
+		if( $existing_user === true) {
+		
+			
+		// User data is available in the DB through initial Import
+		// or registered at the time of admission
+		//
+		// Redirects to signin 2 for checking password 
+		
+		
+			array_push($arr_alert, "Authenticate level 2");
+			$_SESSION['new_user'] = false;
+			$_SESSION['LEVEL_1_CLEAR'] = true;
+			redirect('signin2.php');
+
+
+		}elseif($existing_user === false){
+
+			// This is a new user password is null
+			// forces user to enter password
+			//
+			$_SESSION['new_user'] = true;
+			$_SESSION['LEVEL_1_CLEAR'] = true;
+			add_to_error_messages("Please update your profile & Password");
+			redirect('profile.php');		
+			
+
+		} elseif($existing_user === NULL) {
+
+
+			// if session is not working this will be error
+			// array_push() expects parameter 1 to be array, null given in /var/www/html/enterprise/include/inc_signin1.php on line 62	
+	
+			// UnAuthorised User
+
+			//array_push($arr_alert, "Please contact Staff in Charge or Office for correct Admission Number");
+			add_to_error_messages("Please contact Staff in Charge or Office for correct Admission Number");
+			redirect("signin1.php");
+			
+		}
+
+		
+
+		 
+	}
+}
+
+generate_captcha();
+
+
+
+
+
+
+function test_input($data) {
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
+
+
+
+function validate_fields() {
+
+
+global $err_email,$err_password,$err_name, $arr_alert, $err_captcha, $err_admission_no;
+global $email, $password, $name, $valid_data, $admission_no;
+$valid_data=true;
+
+	 
+	$_SESSION['admission_no'] = $admission_no = $_POST['admission_no'];
+
+
+	//   captcha
+  	if(empty(trim($_POST['cap']))) {
+  		$err_captcha = "Please enter Captcha";
+  		$valid_data=false;
+  	} elseif($_POST['cap'] != $_SESSION['val_cap']){
+  		$err_captcha = "Please enter Captcha properly";
+  		$valid_data=false;
+	} else {
+		$cap = test_input($_POST["cap"]);
+	}
+
+	
+
+
+	//   ------------- Validation of fields -END-
+	if(!$valid_data){
+		$alert_string="Sorry, unable to register, Invalid data!";
+		//array_push($arr_alert, "Sorry, Invalid email!");
+		//$there_are_alerts=true;
+	}
+
+	return $valid_data;
+
+}?>

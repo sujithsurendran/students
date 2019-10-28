@@ -1,0 +1,18 @@
+
+	<style>
+	
+	
+	#fileToUpload{
+	     display: none;
+	       }
+	       
+	 .newbtn{
+	         cursor: pointer;
+	      }
+	      #profile_photo{
+	  max-width:100px;
+	  height:100px;
+	  margin-top:20px;
+	}
+	
+	</style>
