@@ -1,4 +1,4 @@
-<?php session_start();
+<?php 
 $page="index";
 $page_name="Home";
 global $arr_alert;
@@ -7,14 +7,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-include 'include/inc_constants.php';
-include 'include/inc_functions.php';
-include 'include/db_connection.php';
-include 'include/error_messages.php';
-include 'include/head.php';
-include 'include/site-header.php';
-include 'include/page-header-and-menu.php';
-include 'include/inc_profile_admin.php';?>
+//include 'include/inc_profile_admin.php';?>
 
 
 

@@ -364,3 +364,32 @@ Set a breakpoint on '_pixman_log_error' to debug
 (soffice:12402): Gtk-CRITICAL **: gtk_widget_queue_draw_area: assertion 'height >= 0' failed
 Gdk-Message: nautilus: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
 
+
+(nautilus:15718): GLib-GIO-CRITICAL **: g_dbus_proxy_new_sync: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(nautilus:15718): GLib-GIO-CRITICAL **: g_dbus_proxy_get_name_owner: assertion 'G_IS_DBUS_PROXY (proxy)' failed
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(nautilus:15718): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:15718): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:15718): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:15718): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:15718): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:15718): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:15718): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:15718): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:15718): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:15718): GLib-GIO-CRITICAL **: g_dbus_connection_call_internal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed

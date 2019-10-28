@@ -1,5 +1,5 @@
 <?php
-profile();
+
 global $privileges;
 
 // variables ---
@@ -13,51 +13,20 @@ $err_address1 = $err_address2 = $err_address3 = $err_roll_no_pf_no = $err_joinin
 
 $user = fetch_data($_SESSION["user_id"]);
 if(is_null($user)) {
-	$_SESSION["user_id"] = null;
-	$_SESSION['LEVEL_1_CLEAR'] = false;
-	redirect("signin1.php");
+	
+		$_SESSION["user_id"] = null;
+		$_SESSION['LEVEL_1_CLEAR'] = false;
+		redirect("sign-in-1.php");
 	}else {
-		
-		}
-
-
-if($_SERVER['REQUEST_METHOD'] == "POST"  && isset($_POST['btn_get_documents'])  ) {
+		//		
+	}
 
 
 
-$admission_number = $user['internal_id'];
-	
-$filename = "./documents/" . $admission_number . ".png";
-write_log($filename);
-if(file_exists($filename)){
-
-    //Get file type and set it as Content Type
-    $finfo = finfo_open(FILEINFO_MIME_TYPE);
-    header('Content-Type: ' . finfo_file($finfo, $filename));
-    finfo_close($finfo);
-
-    //Use Content-Disposition: attachment to specify the filename
-    header('Content-Disposition: attachment; filename='.basename($filename));
-
-    //No cache
-    header('Expires: 0');
-    header('Cache-Control: must-revalidate');
-    header('Pragma: public');
-
-    //Define file size
-    header('Content-Length: ' . filesize($filename));
-
-    ob_clean();
-    flush();
-    readfile($filename);
-    exit;
-}	
-	
-}
 
 
 
-if($_SERVER['REQUEST_METHOD'] == "POST"  && isset($_POST['btn_update_profile'])  ) {
+if($_SERVER['REQUEST_METHOD'] == "POST" ) {
 
 
 	if(validate_fields()) {
@@ -97,16 +66,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"  && isset($_POST['btn_update_profile']) 
 	
 	$name = $user['name'];
 	$year_of_admission = $user['year_of_admission'];	
-	
 	$dob = $user['dob'];
-	
-	
 
 	list($dd,$mm,$yy)=explode("-",$dob);
 	$dob = $dd . "/" . $mm . "/" . $yy;
-
-
-
 
 
 	if(!is_null($user['joining_date'])){
@@ -122,7 +85,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"  && isset($_POST['btn_update_profile']) 
 
 	$email = $user['email'];	
 	$branch = $user['branch'];
-	$internal_id = $user['internal_id'];
+	$internal_id = $user['login'];
 	$roll_no_pf_no = $user['roll_no_pf_no'];
 	$mobile = $user['mobile'];
 	$phone = $user['phone'];
@@ -139,7 +102,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"  && isset($_POST['btn_update_profile']) 
 
 	
 }else {
-redirect('signin1.php');	
+redirect('sign-in-1.php');	
 	
 }
 

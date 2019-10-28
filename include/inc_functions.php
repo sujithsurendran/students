@@ -179,4 +179,52 @@ function profile() {
 
 
 
+
+function data_entry_helper($fieldName, $caption, $value, $error, $readOnly=false){
+
+$data_entry_helper_html = '
+<div class="row">
+						
+						<div class="form-group">
+								<label class="control-label col-sm-5" for="' . $fieldName . '">' . $caption . '</label>
+								<div class="col-sm-7">
+				      					<input name="' . $fieldName . '" value = "' .  $value . '" type="text" class="form-control" id="' . $fieldName . '" 
+				      					placeholder="' . $fieldName . '" ' .  ($readOnly?'readonly="true"':'') . '>
+								</div>
+						</div>
+</div>
+<div class="row"><div class=col-sm-12>' .  show_error($error, "text-danger", $fieldName ) . '</div></div>';
+return($data_entry_helper_html);
+
+
+}
+
+function show_message($message) {
+	return '
+			<div class="row" style="text-align:right;">
+				<div class="col-sm-12 show_message">' . $message . '</span></div>			
+			</div>'	;
+	
+	
+	
+	
+	}
+function html_drop_down_selected($tableName, $fieldName, $selection="", $html_string=""){
+global $db;
+
+
+$sql=$db->prepare("SELECT id, " . $fieldName . " FROM " . $tableName );
+$sql->execute();
+$data = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+
+$html_drop_down = "<select " . $html_string . ">";
+foreach($data as $row)
+	 $html_drop_down .= "<option value = " . $row['id'] . " " . ($row['id']==intval($selection)?" selected='SELECTED'":"") . "> " . $row[$fieldName] . "</option>";
+
+$html_drop_down .= "</select>";
+return($html_drop_down);
+}
+
+
 ?>

@@ -22,7 +22,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 				$_SESSION['LEVEL_1_CLEAR'] = true;
 				redirect('sign-in-2.php');
 			}else {
-				add_to_error_messages("Please contact Staff in Charge or Office for correct Login");
+				add_to_error_messages("Please contact Office/Administrator for correct Login");
 				redirect('sign-in-1.php');				
 			}
 	}
