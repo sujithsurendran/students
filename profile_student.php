@@ -146,7 +146,7 @@ include 'include/inc_profile_student.php';
 			</div>	
 
 			<!-- Roll No -->
-			<?php echo data_entry_helper("roll_no", "Roll No", $roll_no, $err_roll_no)?>
+			<?php echo data_entry_helper("roll_no", "Roll No", $roll_no_pf_no, $roll_no_pf_no)?>
 
 
 			<!--     Blood Group    Start      -->

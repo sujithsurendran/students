@@ -27,6 +27,8 @@ $sql=$db->prepare("SELECT * FROM menu WHERE user_type_id = " . $user_id);
 $sql->execute();
 $data = $sql->fetchAll(PDO::FETCH_ASSOC);
 
+
+
 echo '<div class="row">';
 					echo '<div class="col-sm-2"></div>';
 						foreach($data as $row){
@@ -39,9 +41,9 @@ echo '<div class="row">';
 				
 				
 												if(isset($_SESSION['user_id'])) { 
-													echo '<div class="col-sm-2"><a href="logout.php">Logout</a></div>		
+													echo '<div class="col-sm-2" ><a href="logout.php">Logout</a></div>		
 															<div class="col-sm-2">
-															<button class = "sticky-button" id = "sticky-button" type="submit" onclick="return validate();"   name="btn_update_profile"> Update </button>
+															<button type="submit" onclick="return validate();"   name="btn_update_profile"> Update </button>
 															</div>';
 															
 													//echo '<div class="col-sm-2"><a href="logout.php">Logout</a></div>		

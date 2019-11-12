@@ -393,3 +393,591 @@ Error creating proxy: The connection is closed (g-io-error-quark, 18)
 (nautilus:15718): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
 
 (nautilus:15718): GLib-GIO-CRITICAL **: g_dbus_connection_call_internal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(nautilus:3155): GdkPixbuf-CRITICAL **: gdk_pixbuf_composite: assertion 'dest_y >= 0 && dest_y + dest_height <= dest->height' failed
+
+(nautilus:3155): GdkPixbuf-CRITICAL **: gdk_pixbuf_composite: assertion 'dest_y >= 0 && dest_y + dest_height <= dest->height' failed
+error reading list 1 Error opening file /home/sujith/.bluefish/rcfile-2.0: No such file or directory
+
+** (bluefish:3224): WARNING **: no configfile rcfile-2.0, try to convert config files from older versions
+
+config file migration error while reading old file 1:Error opening file /home/sujith/.bluefish/rcfile_v2: No such file or directory
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Possible error in language file nameless-context / nameless-context / t.html.style / c.html.css.main / group / }: id - / pattern } has ends_context=2, but has only 2 parent contexts
+Error in language file nameless-context / nameless-context / group / nameless-tag / hreflang: patterns ("[^"]*"|'[^']*') and '' in context 252 overlap each other
+Error in language file nameless-context / nameless-context / group / nameless-tag / hreflang: patterns ("[^"]*"|'[^']*') and "" in context 252 overlap each other
+Language statistics for PHP from /usr/share/bluefish/bflang//php.bflang2
+reference size         1006.97 Kbytes
+largest table 32358 (  8089.50 Kbytes)
+total tables  75316 ( 18829.00 Kbytes)
+contexts        420 (    19.69 Kbytes)
+matches        9440 (   516.25 Kbytes)
+blocks           14 (     0.44 Kbytes)
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(eog:5629): Gtk-WARNING **: Allocating size to EogStatusbar 0x7f64a2baf4f0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+
+(eog:5629): EOG-WARNING **: Failed to open file '/home/sujith/.cache/thumbnails/normal/a3f029717ca10af232e9cebc460e0b31.png': No such file or directory
+
+(nautilus:3155): GdkPixbuf-CRITICAL **: gdk_pixbuf_composite: assertion 'dest_y >= 0 && dest_y + dest_height <= dest->height' failed
+
+(nautilus:3155): GdkPixbuf-CRITICAL **: gdk_pixbuf_composite: assertion 'dest_y >= 0 && dest_y + dest_height <= dest->height' failed
+
+(nautilus:3155): GdkPixbuf-CRITICAL **: gdk_pixbuf_composite: assertion 'dest_y >= 0 && dest_y + dest_height <= dest->height' failed
+
+(nautilus:3155): GdkPixbuf-CRITICAL **: gdk_pixbuf_composite: assertion 'dest_y >= 0 && dest_y + dest_height <= dest->height' failed
+
+(nautilus:3155): GdkPixbuf-CRITICAL **: gdk_pixbuf_composite: assertion 'dest_y >= 0 && dest_y + dest_height <= dest->height' failed
+error reading list 1 Error opening file /home/sujith/.bluefish/rcfile-2.0: No such file or directory
+
+** (bluefish:7103): WARNING **: no configfile rcfile-2.0, try to convert config files from older versions
+
+config file migration error while reading old file 1:Error opening file /home/sujith/.bluefish/rcfile_v2: No such file or directory
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:3224): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(nautilus:2076): GLib-GIO-CRITICAL **: g_dbus_proxy_new_sync: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(nautilus:2076): GLib-GIO-CRITICAL **: g_dbus_proxy_get_name_owner: assertion 'G_IS_DBUS_PROXY (proxy)' failed
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(nautilus:2076): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2076): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2076): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2076): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2076): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2076): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2076): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Possible error in language file nameless-context / nameless-context / t.html.style / c.html.css.main / group / }: id - / pattern } has ends_context=2, but has only 2 parent contexts
+Error in language file nameless-context / nameless-context / group / nameless-tag / hreflang: patterns ("[^"]*"|'[^']*') and '' in context 252 overlap each other
+Error in language file nameless-context / nameless-context / group / nameless-tag / hreflang: patterns ("[^"]*"|'[^']*') and "" in context 252 overlap each other
+Language statistics for PHP from /usr/share/bluefish/bflang//php.bflang2
+reference size         1006.97 Kbytes
+largest table 32358 (  8089.50 Kbytes)
+total tables  75316 ( 18829.00 Kbytes)
+contexts        420 (    19.69 Kbytes)
+matches        9440 (   516.25 Kbytes)
+blocks           14 (     0.44 Kbytes)
+
+(nautilus:2076): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2076): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:4245): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Duplicate property or field node
+
+(eog:3002): EOG-WARNING **: Failed to open file '/home/sujith/.cache/thumbnails/normal/7753707744c0e868d86295b54cb28845.png': No such file or directory
+
+(eog:3002): Gtk-WARNING **: Allocating size to EogStatusbar 0x7f0b0f48f4f0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+Duplicate property or field node
+Duplicate property or field node
+
+(gimp-2.8:3024): GLib-GObject-WARNING **: g_object_set_valist: object class 'GeglConfig' has no property named 'cache-size'
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C01860 from "gimp:point-layer-mode" to "gimp:dissolve-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C01DC0 from "gimp:point-layer-mode" to "gimp:behind-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C024D0 from "gimp:point-layer-mode" to "gimp:multiply-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C028C0 from "gimp:point-layer-mode" to "gimp:screen-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C02C90 from "gimp:point-layer-mode" to "gimp:overlay-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C030C0 from "gimp:point-layer-mode" to "gimp:difference-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C03480 from "gimp:point-layer-mode" to "gimp:addition-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C038C0 from "gimp:point-layer-mode" to "gimp:subtract-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C03CB0 from "gimp:point-layer-mode" to "gimp:darken-only-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C04000 from "gimp:point-layer-mode" to "gimp:lighten-only-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C043A0 from "gimp:point-layer-mode" to "gimp:hue-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C04780 from "gimp:point-layer-mode" to "gimp:saturation-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C04BE0 from "gimp:point-layer-mode" to "gimp:color-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C04FF0 from "gimp:point-layer-mode" to "gimp:value-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C05370 from "gimp:point-layer-mode" to "gimp:divide-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C057F0 from "gimp:point-layer-mode" to "gimp:dodge-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C05B60 from "gimp:point-layer-mode" to "gimp:burn-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C06800 from "gimp:point-layer-mode" to "gimp:hardlight-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C06BC0 from "gimp:point-layer-mode" to "gimp:softlight-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C06F70 from "gimp:point-layer-mode" to "gimp:grain-extract-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C07360 from "gimp:point-layer-mode" to "gimp:grain-merge-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C07770 from "gimp:point-layer-mode" to "gimp:color-erase-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C07B60 from "gimp:point-layer-mode" to "gimp:erase-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C07F70 from "gimp:point-layer-mode" to "gimp:replace-mode"
+
+(gimp-2.8:3024): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F5C43C083B0 from "gimp:point-layer-mode" to "gimp:anti-erase-mode"
+While parsing XMP metadata:
+Error on line 42 char 1: End of element <exif:Flash> not expected in this context
+While parsing XMP metadata:
+Error on line 56 char 1: End of element <exif:Flash> not expected in this context
+
+Metadata parasite seems to be corrupt
+While parsing XMP metadata:
+Error on line 42 char 1: End of element <exif:Flash> not expected in this context
+
+** (file-jpeg:3039): WARNING **: JPEG - unable to decode XMP metadata packet
+Duplicate property or field node
+
+(eog:3888): Gtk-WARNING **: Allocating size to EogStatusbar 0x7faca6cff4f0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+
+(eog:3888): Gtk-WARNING **: Allocating size to EogStatusbar 0x7faca6cff4f0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+
+(eog:3888): Gtk-WARNING **: Allocating size to EogStatusbar 0x7faca6cff4f0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+Duplicate property or field node
+
+(eog:3943): Gtk-WARNING **: Allocating size to EogStatusbar 0x7f6dcecc24f0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+Duplicate property or field node
+
+(eog:3952): Gtk-WARNING **: Allocating size to EogStatusbar 0x7f54d76ca4f0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+While parsing XMP metadata:
+Error on line 42 char 1: End of element <exif:Flash> not expected in this context
+While parsing XMP metadata:
+Error on line 56 char 1: End of element <exif:Flash> not expected in this context
+
+Metadata parasite seems to be corrupt
+While parsing XMP metadata:
+Error on line 42 char 1: End of element <exif:Flash> not expected in this context
+
+** (file-jpeg:3975): WARNING **: JPEG - unable to decode XMP metadata packet
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_set_focus_display: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_key_press: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_set_modifier_state: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_oper_update: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_cursor_update: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_set_focus_display: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_key_press: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_set_modifier_state: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_oper_update: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_cursor_update: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_set_focus_display: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_key_press: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_set_modifier_state: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_oper_update: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:3024): Gimp-Tools-CRITICAL **: gimp_tool_cursor_update: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(script-fu:3036): LibGimpBase-WARNING **: script-fu: gimp_wire_read(): error
+
+(gimp-2.8:4014): GLib-GObject-WARNING **: g_object_set_valist: object class 'GeglConfig' has no property named 'cache-size'
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F43024FFD30 from "gimp:point-layer-mode" to "gimp:dissolve-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302500090 from "gimp:point-layer-mode" to "gimp:behind-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302500480 from "gimp:point-layer-mode" to "gimp:multiply-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302501600 from "gimp:point-layer-mode" to "gimp:screen-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F43025019D0 from "gimp:point-layer-mode" to "gimp:overlay-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302501E00 from "gimp:point-layer-mode" to "gimp:difference-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F43025021C0 from "gimp:point-layer-mode" to "gimp:addition-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302502600 from "gimp:point-layer-mode" to "gimp:subtract-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F43025029F0 from "gimp:point-layer-mode" to "gimp:darken-only-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302502E40 from "gimp:point-layer-mode" to "gimp:lighten-only-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F43025031E0 from "gimp:point-layer-mode" to "gimp:hue-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302503560 from "gimp:point-layer-mode" to "gimp:saturation-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302503950 from "gimp:point-layer-mode" to "gimp:color-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302503DB0 from "gimp:point-layer-mode" to "gimp:value-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F43025041A0 from "gimp:point-layer-mode" to "gimp:divide-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302504620 from "gimp:point-layer-mode" to "gimp:dodge-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302504A10 from "gimp:point-layer-mode" to "gimp:burn-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302504E40 from "gimp:point-layer-mode" to "gimp:hardlight-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302505920 from "gimp:point-layer-mode" to "gimp:softlight-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302505D20 from "gimp:point-layer-mode" to "gimp:grain-extract-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F43025060E0 from "gimp:point-layer-mode" to "gimp:grain-merge-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302506530 from "gimp:point-layer-mode" to "gimp:color-erase-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F43025068D0 from "gimp:point-layer-mode" to "gimp:erase-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302506DA0 from "gimp:point-layer-mode" to "gimp:replace-mode"
+
+(gimp-2.8:4014): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F4302507080 from "gimp:point-layer-mode" to "gimp:anti-erase-mode"
+While parsing XMP metadata:
+Error on line 42 char 1: End of element <exif:Flash> not expected in this context
+While parsing XMP metadata:
+Error on line 56 char 1: End of element <exif:Flash> not expected in this context
+
+Metadata parasite seems to be corrupt
+While parsing XMP metadata:
+Error on line 42 char 1: End of element <exif:Flash> not expected in this context
+
+** (file-jpeg:4028): WARNING **: JPEG - unable to decode XMP metadata packet
+
+(gimp-2.8:4014): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:4014): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:4014): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:4014): Gdk-WARNING **: /build/gtk+2.0-1aCJs4/gtk+2.0-2.24.31/gdk/x11/gdkdrawable-x11.c:942 drawable is not a native X11 window
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_set_focus_display: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_key_press: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_set_modifier_state: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_oper_update: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_cursor_update: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_set_focus_display: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_key_press: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_set_modifier_state: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_oper_update: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_cursor_update: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_set_focus_display: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_key_press: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_set_modifier_state: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_oper_update: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(gimp-2.8:4014): Gimp-Tools-CRITICAL **: gimp_tool_cursor_update: assertion 'gimp_tool_control_is_active (tool->control) == FALSE' failed
+
+(eog:4592): Gtk-WARNING **: Allocating size to EogStatusbar 0x7fd8d3e564f0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+
+(eog:4592): EOG-WARNING **: Failed to open file '/home/sujith/.cache/thumbnails/normal/19071a312071a6c7d431060231f92a0c.png': No such file or directory
+
+(eog:4592): EOG-WARNING **: Failed to open file '/home/sujith/.cache/thumbnails/normal/1fa2d0a37b7405044c9046669ac80675.png': No such file or directory
+
+(gimp-2.8:4612): GLib-GObject-WARNING **: g_object_set_valist: object class 'GeglConfig' has no property named 'cache-size'
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988AFD0 from "gimp:point-layer-mode" to "gimp:dissolve-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988B1D0 from "gimp:point-layer-mode" to "gimp:behind-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988B5E0 from "gimp:point-layer-mode" to "gimp:multiply-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988C8F0 from "gimp:point-layer-mode" to "gimp:screen-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988CC90 from "gimp:point-layer-mode" to "gimp:overlay-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988D0C0 from "gimp:point-layer-mode" to "gimp:difference-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988D480 from "gimp:point-layer-mode" to "gimp:addition-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988D8C0 from "gimp:point-layer-mode" to "gimp:subtract-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988DCB0 from "gimp:point-layer-mode" to "gimp:darken-only-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988E000 from "gimp:point-layer-mode" to "gimp:lighten-only-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988E3A0 from "gimp:point-layer-mode" to "gimp:hue-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988E780 from "gimp:point-layer-mode" to "gimp:saturation-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988EBE0 from "gimp:point-layer-mode" to "gimp:color-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988EFF0 from "gimp:point-layer-mode" to "gimp:value-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988F370 from "gimp:point-layer-mode" to "gimp:divide-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988F7F0 from "gimp:point-layer-mode" to "gimp:dodge-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988FB60 from "gimp:point-layer-mode" to "gimp:burn-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F186988FFB0 from "gimp:point-layer-mode" to "gimp:hardlight-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F1869890C00 from "gimp:point-layer-mode" to "gimp:softlight-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F1869890F60 from "gimp:point-layer-mode" to "gimp:grain-extract-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F1869891350 from "gimp:point-layer-mode" to "gimp:grain-merge-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F1869891760 from "gimp:point-layer-mode" to "gimp:color-erase-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F1869891B50 from "gimp:point-layer-mode" to "gimp:erase-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F1869891F60 from "gimp:point-layer-mode" to "gimp:replace-mode"
+
+(gimp-2.8:4612): GEGL-gegl-operation.c-WARNING **: Cannot change name of operation class 0x7F18698923A0 from "gimp:point-layer-mode" to "gimp:anti-erase-mode"
+Duplicate property or field node
+
+(eog:4693): Gtk-WARNING **: Allocating size to EogStatusbar 0x7fba706204f0 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+Duplicate property or field node
+
+(eog:4702): Gtk-WARNING **: Allocating size to EogStatusbar 0x7fa93dff1530 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?

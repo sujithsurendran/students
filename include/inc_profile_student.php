@@ -4,7 +4,7 @@ global $privileges;
 
 // variables ---
 $email = $password = $name = $joining_date = "";
-//$arr_alert=array("");
+
 $err_email = $err_name = $err_dob = $err_password = $err_captcha = $err_password_confirm = $err_internal_id = $err_branch = $err_year_of_admission = "";
 $err_blood_group = $err_mobile = $err_phone = $err_address1 = $err_pin = $err_district = $err_state = $err_country = "";
 $err_address1 = $err_address2 = $err_address3 = $err_roll_no_pf_no = $err_joining_date = $err_user_type ="" ;
