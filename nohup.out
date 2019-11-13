@@ -981,3 +981,261 @@ Duplicate property or field node
 Duplicate property or field node
 
 (eog:4702): Gtk-WARNING **: Allocating size to EogStatusbar 0x7fa93dff1530 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+
+(nautilus:2619): GLib-GIO-CRITICAL **: g_dbus_proxy_new_sync: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(nautilus:2619): GLib-GIO-CRITICAL **: g_dbus_proxy_get_name_owner: assertion 'G_IS_DBUS_PROXY (proxy)' failed
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2619): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Possible error in language file nameless-context / nameless-context / t.html.style / c.html.css.main / group / }: id - / pattern } has ends_context=2, but has only 2 parent contexts
+Error in language file nameless-context / nameless-context / group / nameless-tag / hreflang: patterns ("[^"]*"|'[^']*') and '' in context 252 overlap each other
+Error in language file nameless-context / nameless-context / group / nameless-tag / hreflang: patterns ("[^"]*"|'[^']*') and "" in context 252 overlap each other
+Language statistics for PHP from /usr/share/bluefish/bflang//php.bflang2
+reference size         1006.97 Kbytes
+largest table 32358 (  8089.50 Kbytes)
+total tables  75316 ( 18829.00 Kbytes)
+contexts        420 (    19.69 Kbytes)
+matches        9440 (   516.25 Kbytes)
+blocks           14 (     0.44 Kbytes)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Possible error in language file c.html.css.main / c.html.css.main / group / }: id - / pattern } has ends_context=2, but has only 1 parent contexts
+Error in language file CSS: condition reference to context c.html.attrib.style.inner for pattern 185 (") does not exist
+Error in language file CSS: condition reference to context c.html.attrib.style.inner for pattern 186 (') does not exist
+Language statistics for CSS from /usr/share/bluefish/bflang//css.bflang2
+reference size           69.08 Kbytes
+largest table  1137 (   284.25 Kbytes)
+total tables   8432 (  2108.00 Kbytes)
+contexts        114 (     5.34 Kbytes)
+matches        1234 (    67.48 Kbytes)
+blocks            1 (     0.03 Kbytes)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:2:27: The style property GtkButton:default-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:3:35: The style property GtkButton:default-outside-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:4:25: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:5:29: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(bluefish:2649): Gtk-WARNING **: Theme parsing error: <data>:6:26: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+Error creating proxy: The connection is closed (g-io-error-quark, 18)
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2619): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2619): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2619): Gtk-CRITICAL **: gtk_widget_event: assertion 'WIDGET_REALIZED_FOR_EVENT (widget, event)' failed
+
+(nautilus:2619): Gtk-CRITICAL **: gtk_widget_event: assertion 'WIDGET_REALIZED_FOR_EVENT (widget, event)' failed
+
+** (nautilus:2619): WARNING **: Could not establish a connection to Tracker: The connection is closed
+
+(nautilus:2619): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2619): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2619): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+** (nautilus:2619): WARNING **: Could not establish a connection to Tracker: The connection is closed
+
+(nautilus:2619): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2619): Tracker-CRITICAL **: Couldn't get a proper SPARQL connection: 'The connection is closed'
+
+(nautilus:2619): Tracker-WARNING **: Can't query for tags, no SPARQL connection available
+
+(nautilus:2619): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2619): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2619): dconf-WARNING **: failed to commit changes to dconf: The connection is closed
+
+(nautilus:2619): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2619): GLib-GObject-CRITICAL **: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(nautilus:2619): Gtk-CRITICAL **: gtk_widget_get_mapped: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:2619): Gdk-CRITICAL **: gdk_window_is_visible: assertion 'GDK_IS_WINDOW (window)' failed
+
+(nautilus:2619): Gdk-CRITICAL **: gdk_window_show_internal: assertion 'GDK_IS_WINDOW (window)' failed
+
+(nautilus:2619): Gtk-CRITICAL **: gtk_widget_set_opacity: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:2619): Gtk-CRITICAL **: gtk_widget_queue_draw: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:2619): GLib-GIO-CRITICAL **: g_dbus_connection_call_internal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+
+(nautilus:2619): Gtk-CRITICAL **: gtk_widget_get_mapped: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:2619): Gdk-CRITICAL **: gdk_window_is_visible: assertion 'GDK_IS_WINDOW (window)' failed
+
+(nautilus:2619): Gtk-CRITICAL **: gtk_widget_set_opacity: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nautilus:2619): Gtk-CRITICAL **: gtk_widget_queue_draw: assertion 'GTK_IS_WIDGET (widget)' failed

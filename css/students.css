@@ -61,4 +61,16 @@ div.sticky {
 	border-bottom-style: solid;
 
 }
+.control-label {
+	font-weight: normal;
+	font-size: 90%;
+}
+
+
+.show_message {
+	color: #5499c7 ;
+	font-size: 90%;
+
+}
+
 
