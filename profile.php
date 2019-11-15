@@ -1,6 +1,7 @@
 <?php session_start();
 $page="index";
 $page_name="Home";
+$show_update_cancel_buttons=true;
 global $arr_alert;
 
 ini_set('display_errors', 1);

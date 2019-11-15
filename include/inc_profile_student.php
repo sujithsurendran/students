@@ -26,13 +26,13 @@ if(is_null($user)) {
 
 
 
-if($_SERVER['REQUEST_METHOD'] == "POST" ) {
+if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['btn_update_profile']) ) {
 
 
 	if(validate_fields()) {
 				
 					if(photo_uploaded()) {
-							// photo upload successfull
+							// photo upload successful
 						}else {
 							array_push($arr_alert,"Error while uploading Photo");
 							

@@ -68,10 +68,20 @@ div.sticky {
 
 
 .show_message {
-	background-color: #5499c7 ;
-	color:#fff;
+	color: #5499c7 ;
 	font-size: 90%;
 
 }
+
+
+@media screen and (max-width: 780px) {
+div.col-sm-2, div.col-sm-2.menu a span {
+	background-color:#1f618d;
+	width:40%;
+	color: #dbeefb ;
+
+}
+}
+
 
 

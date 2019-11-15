@@ -1,6 +1,7 @@
 <?php 
 $page="profile";
 $page_name="Profile";
+
 global $arr_alert;
 
 ini_set('display_errors', 1);

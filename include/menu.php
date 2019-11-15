@@ -21,7 +21,7 @@ load_menu($user_id, $page);
 	
 	
 function load_menu($user_id=0,$page){
-global $db;
+global $db, $show_update_and_cancel_button;
 
 $sql=$db->prepare("SELECT * FROM menu WHERE user_type_id = " . $user_id);
 $sql->execute();
@@ -33,7 +33,7 @@ echo '<div class="row">';
 					echo '<div class="col-sm-2"></div>';
 						foreach($data as $row){
 
-							echo '<div class="col-sm-2"><a href="' . $row['menu_link'] . '">' . '<span style="' . 'color:' . ($row['page']==$page?"grey;text-decoration:underline;":'') . '">' . $row['menu'] . '</span></a></div>';	
+							echo '<div class="col-sm-2 menu"><a href="' . $row['menu_link'] . '">' . '<span style="' . 'color:' . ($row['page']==$page?"grey;text-decoration:underline;":'') . '">' . $row['menu'] . '</span></a></div>';	
 					 		 
 					 	}
 					echo '<div class="col-sm-2"></div>';
@@ -41,23 +41,48 @@ echo '<div class="row">';
 				
 				
 												if(isset($_SESSION['user_id'])) { 
-													echo '<div class="col-sm-2" ><a href="logout.php">Logout</a></div>		
-															<div class="col-sm-2">
-															<button type="submit" onclick="return validate();"   name="btn_update_profile"> Update </button>
-															</div>';
+													echo '<div class="col-sm-2" ><a href="logout.php">Logout</a></div>';
 															
-													//echo '<div class="col-sm-2"><a href="logout.php">Logout</a></div>		
-													//		<div class="col-sm-2">
-													//		<button class = "sticky-button" id = "sticky-button" type="submit" onclick="return validate();"   name="btn_update_profile"> Update </button>
-													//		</div>';
+
 
 												} else { 
 													echo '<div class="col-sm-2"><a href="sign-in-1.php"><span ' . ($page=="sign-in-1" ? 'style="color:grey;"' : "") . '>Login</span></a></div>'	;	
 												} 
 echo '</div>';	
-		
+
+					
+					if(isset($show_update_and_cancel_button) && show_update_and_cancel_button ==true){
+						show_update_and_cancel_button();
+					}	
 
 }
+
+
+
+
+
+
+
+
+function	show_update_and_cancel_button() {
+
+echo '<div class="row">	
+															<div class="col-sm-2"></div>							
+							
+															<div class="col-sm-8">
+																	<button class="btn btn-primary btn-sm" type="submit" onclick="return validate();"   name="btn_update_profile"> Update </button>
+																	<button class="btn btn-warning btn-sm" type="submit" onclick="return validate();"   name="btn_cancel"> Cancel </button>
+															</div>
+															
+															<div class="col-sm-2"></div>															
+															
+															
+															';
+
+echo '</div>';	
+
+
+} 
 
 
 	
