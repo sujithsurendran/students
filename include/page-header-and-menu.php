@@ -45,7 +45,11 @@
 					    				<?php include 'include/menu.php';?>
 					    			</div>
 					    	</div>
-					    	
+					    	<?php
+					    	 					if(isset($show_update_and_cancel_button) && ($show_update_and_cancel_button == true)){
+														show_update_and_cancel_button();
+													}	
+								?>
 					    	
 					</div>
 

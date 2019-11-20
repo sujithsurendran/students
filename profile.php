@@ -1,7 +1,7 @@
 <?php session_start();
 $page="index";
 $page_name="Home";
-$show_update_cancel_buttons=true;
+$show_update_and_cancel_button=true;
 global $arr_alert;
 
 ini_set('display_errors', 1);
@@ -15,6 +15,7 @@ include 'include/db_connection.php';
 include 'include/error_messages.php';
 include 'include/inc_js_and_css.php';
 include 'include/page-header-and-menu.php';
+
 
 
 

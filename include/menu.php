@@ -23,6 +23,10 @@ load_menu($user_id, $page);
 function load_menu($user_id=0,$page){
 global $db, $show_update_and_cancel_button;
 
+
+
+
+
 $sql=$db->prepare("SELECT * FROM menu WHERE user_type_id = " . $user_id);
 $sql->execute();
 $data = $sql->fetchAll(PDO::FETCH_ASSOC);
@@ -33,7 +37,18 @@ echo '<div class="row">';
 					echo '<div class="col-sm-2"></div>';
 						foreach($data as $row){
 
-							echo '<div class="col-sm-2 menu"><a href="' . $row['menu_link'] . '">' . '<span style="' . 'color:' . ($row['page']==$page?"grey;text-decoration:underline;":'') . '">' . $row['menu'] . '</span></a></div>';	
+							//echo '<div class="col-sm-2"><span class ="menu" ><a href="' . $row['menu_link'] . '">' . '<span style="' . 'color:' . ($row['page']==$page?"grey;text-decoration:underline;":'') . '">' . $row['menu'] . '</span></a></div>';	
+							
+							if($row['page']==$page) {	
+									echo '<div class="col-sm-2 current-page">
+													<span class ="menu" >
+														<a href="' . $row['menu_link'] . '">' . $row['menu'] . 
+														'</a>
+													</span>
+												</div>';
+							}else {
+									echo '<div class="col-sm-2"><span class ="menu" ><a href="' . $row['menu_link'] . '">' . $row['menu'] . '</a></div>';	
+							}	
 					 		 
 					 	}
 					echo '<div class="col-sm-2"></div>';
@@ -41,25 +56,19 @@ echo '<div class="row">';
 				
 				
 												if(isset($_SESSION['user_id'])) { 
-													echo '<div class="col-sm-2" ><a href="logout.php">Logout</a></div>';
+													echo '<div class="col-sm-2"><span id="menu"><a href="logout.php"><span >Logout</span></a></span></div>';
 															
 
 
 												} else { 
-													echo '<div class="col-sm-2"><a href="sign-in-1.php"><span ' . ($page=="sign-in-1" ? 'style="color:grey;"' : "") . '>Login</span></a></div>'	;	
+													//echo '<div class="col-sm-2"><span id="menu"><a href="sign-in-1.php"><span ' . ($page=="sign-in-1" ? 'style="color:grey;"' : "") . '>Login</span></a></span></div>'	;	
+													echo '<div class="col-sm-2"><span id="menu"><a href="sign-in-1.php">Login</a></span></div>'	;	
 												} 
 echo '</div>';	
 
 					
-					if(isset($show_update_and_cancel_button) && show_update_and_cancel_button ==true){
-						show_update_and_cancel_button();
-					}	
 
 }
-
-
-
-
 
 
 

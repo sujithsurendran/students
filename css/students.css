@@ -73,15 +73,76 @@ div.sticky {
 
 }
 
-
+/*
 @media screen and (max-width: 780px) {
 div.col-sm-2, div.col-sm-2.menu a span {
 	background-color:#1f618d;
 	width:40%;
 	color: #dbeefb ;
+	text-align: left;
+	padding-left:5px;
+	width:70px;
+}
+}*/
+
+@media screen and (max-width: 780px) {
+
+
+/*div.row div.col-sm-12 div.row div.col-sm-2.menu, div.row div.col-sm-2.menu a span{
+background-color: #1f618d;
+width: 150px;
 
 }
+*/
+
+.page-heading-1{
+	height:0px;
+	color:red;
+	display:none;
+
 }
+/*
+div.col-sm-12 div.row div.col-sm-2, div.col-sm-12 div.row div.col-sm-2 span.menu a span, div.col-sm-2 span#menu a span{
+	background-color: #1f618d;
+	text-align: left;
+	width:60%;
+	color: #fff;
+}
+*/
+
+
+div.row div.col-sm-12 div.row div.col-sm-2{
+	background-color: #1f618d;
+	text-align: left;
+	width:60%;
+	color: #fff;
+
+}
+
+div.row div.col-sm-2 span.menu a{
+	background-color: #1f618d;
+	text-align: left;
+	width:60%;
+	color: #fff;
+
+}
+
+div.row div.col-sm-12 div.row div.col-sm-2 span#menu a span{
+	background-color: #1f618d;
+	color:#fff;
+}
+
+div.row div.col-sm-12 div.row div.col-sm-2.current-page span.menu a,
+div.row div.col-sm-12 div.row div.col-sm-2.current-page
+{
+background-color: #eeeff0;;
+color:blue;
+text-align: right;
+}
+
+
+}			/*   DONT DELETE End of Media Spec for mobiles */
+
 
 
 
