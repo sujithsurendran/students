@@ -30,8 +30,8 @@ include 'include/inc_profile_student.php';
 <!-- =========== FORM START ================= -->
 
 
-<?php echo data_entry_helper("internal_id", "Internal id/Admission Number", $internal_id, $err_internal_id,true);?>
-<?php echo data_entry_helper("email", "Login(Email)", $email, $err_email);?>
+<?php echo data_entry_helper("login", "Internal id/Admission Number(Login)", $internal_id, $err_internal_id,true);?>
+<?php echo data_entry_helper("email", "Email", $email, $err_email);?>
 			<div class="row">
 				<div class="control-label col-sm-4"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#change_password">Change Password</button></div>
 				<div class="col-sm-8"></div><br />
@@ -81,7 +81,8 @@ include 'include/inc_profile_student.php';
 			</div><!-- end of collapse-->
 			<?php show_error($err_password_confirm, "text-danger", "password_confirm");?>
 			<?php echo data_entry_helper("name", "Name", $name, $err_name) ?>
-			<?php echo data_entry_helper("year_of_admission", "Year of Admission", $year_of_admission, $err_year_of_admission) ?>
+			<?php echo data_entry_helper("date_of_joining_institution", "Date of joining Institution", $date_of_joining_institution, $err_date_of_joining_institution) ?>
+			<?php echo data_entry_helper("joining_date", "Date of joining(Employee)", $joining_date, $err_joining_date) ?>
 			
 			
 			
@@ -152,7 +153,7 @@ include 'include/inc_profile_student.php';
 			</div>	
 
 			<!-- Roll No -->
-			<?php echo data_entry_helper("roll_no", "Roll No", $roll_no_pf_no, $roll_no_pf_no)?>
+			<?php echo data_entry_helper("roll_no_pf_no", "Roll No", $roll_no_pf_no, $roll_no_pf_no)?>
 
 
 			<!--     Blood Group    Start      -->

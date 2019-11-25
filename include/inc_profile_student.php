@@ -5,7 +5,7 @@ global $privileges;
 // variables ---
 $email = $password = $name = $joining_date = "";
 
-$err_email = $err_name = $err_dob = $err_password = $err_captcha = $err_password_confirm = $err_internal_id = $err_branch = $err_year_of_admission = "";
+$err_email = $err_name = $err_dob = $err_password = $err_captcha = $err_password_confirm = $err_internal_id = $err_branch = $err_date_of_joining_institution = $err_joining_date ="";
 $err_blood_group = $err_mobile = $err_phone = $err_address1 = $err_pin = $err_district = $err_state = $err_country = "";
 $err_address1 = $err_address2 = $err_address3 = $err_roll_no_pf_no = $err_joining_date = $err_user_type ="" ;
 // -----
@@ -65,20 +65,33 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['btn_update_profile']) )
 	
 	
 	$name = $user['name'];
-	$year_of_admission = $user['year_of_admission'];	
-	$dob = $user['dob'];
+	
+	/* $date_of_joining_institution */
+	if(!is_null($user['date_of_joining_institution'])){
+		list($dd,$mm,$yy)=explode("-",$user['date_of_joining_institution']);
+		$date_of_joining_institution = $dd . "/" . $mm . "/" . $yy;
+	}else {
+		$date_of_joining_institution="";
+	}	
+	
+	
 
-	list($dd,$mm,$yy)=explode("-",$dob);
-	$dob = $dd . "/" . $mm . "/" . $yy;
-
-
+	/* $joining_date  for Employees*/
 	if(!is_null($user['joining_date'])){
 		list($dd,$mm,$yy)=explode("-",$user['joining_date']);
 		$joining_date = $dd . "/" . $mm . "/" . $yy;
 	}else {
 		$joining_date="";
-	}
+	}	
 	
+
+
+	
+	
+	$dob = $user['dob'];
+
+	list($dd,$mm,$yy)=explode("-",$dob);
+	$dob = $dd . "/" . $mm . "/" . $yy;
 
 
 	
@@ -96,8 +109,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['btn_update_profile']) )
 	$district = $user['district'];
 	$state = $user['state'];
 	$country = $user['country'];
-	$blood_group = $user['blood_group'];
-	$joining_date = $user['joining_date'];	
+	$blood_group = $user['blood_group_id'];
 	$user_type = get_value_from_table("user_types", "name", "id", $user['user_type_id']);
 
 	
@@ -125,7 +137,6 @@ $enable_log=true;
 		try{
 			
 			
-			write_log("begin trans- update_or_write()");
 			$db->beginTransaction();
 			// Begin transaction
 								if(isset($_SESSION['new_user'])) {
@@ -193,7 +204,7 @@ function write_data(){
 	
 
 global $db, $arr_alert;
-global $email, $password, $name, $dob, $branch, $internal_id, $mobile, $phone, $year_of_admission;
+global $email, $password, $name, $dob, $branch, $internal_id, $mobile, $phone, $date_of_joining_institution;
 global $address1, $address2, $address3, $pin, $district, $state, $country, $blood_group, $roll_no_pf_no, $dob, $joining_date;
 
 global $enable_log;
@@ -205,17 +216,22 @@ $enable_log=true;
 		$dob_db_formatted = $yy . "-" . $mm . "-" . $dd;
 		
 		
+		list($dd,$mm,$yy) = explode("/",$date_of_joining_institution);
+		$date_of_joining_institution_db_formatted = $yy . "-" . $mm . "-" . $dd;
+
+
 		list($dd,$mm,$yy) = explode("/",$joining_date);
 		$joining_date_db_formatted = $yy . "-" . $mm . "-" . $dd;
+
 
 		try {
 			
 			
 			$date = new DateTime();
 
-			$sql = $db->prepare("INSERT INTO users (id, year_of_admission, email, branch, internal_id, name, dob, password, password_hash, 
+			$sql = $db->prepare("INSERT INTO users (id, date_of_joining_institution, email, branch, internal_id, name, dob, password, password_hash, 
 			mobile, phone, address1, address2, address3, pin, district, state, country, blood_group, roll_no_pf_no, joining_date, created_at)
-			VALUES(:id, :year_of_admission, :email, :branch, :internal_id, :name, :dob, :password, :password_hash, :mobile, :phone, :address1, :address2, :address3, 
+			VALUES(:id, :date_of_joining_institution, :email, :branch, :internal_id, :name, :dob, :password, :password_hash, :mobile, :phone, :address1, :address2, :address3, 
 			:pin, :district, :state, :country, :blood_group, :roll_no_pf_no, :joining_date, :created_at)");
 			
 			
@@ -223,12 +239,12 @@ $enable_log=true;
 
 			
 
-			$blood_group = get_value_from_table("blood_groups", "blood_group_name", "blood_group_name", $blood_group);
+			$blood_group = get_value_from_table("blood_groups", "name", "name", $blood_group);
 			$branch = get_value_from_table("branches", "name", "name", $branch);
 			
 			$sql->execute(array(
 					':id' => $id,
-					':year_of_admission' => $year_of_admission,	
+					':date_of_joining_institution' => date("Y-m-d H:i:s", strtotime($date_of_joining_institution)),
 					':email'	 => $email, 
 					':branch' => $branch, 
 					':internal_id' => $internal_id, 
@@ -264,7 +280,8 @@ $enable_log=true;
 
 
 			}else {
-				array_push($arr_alert, $sql . "<br>" . $e->getMessage() . " at " . time()) ;
+				//array_push($arr_alert, $sql . "<br>" . $e->getMessage() . " at " . time()) ;
+				die($e->getMessage());
 				return false;
 			}
 		}
@@ -274,7 +291,7 @@ function update_data(){
 	
 
 global $db, $arr_alert;
-global $email, $password, $name, $dob, $branch, $internal_id, $mobile, $phone, $year_of_admission, $joining_date;
+global $email, $password, $name, $dob, $branch, $internal_id, $mobile, $phone, $date_of_joining_institution_db_formatted;
 global $address1, $address2, $address3, $pin, $district, $state, $country, $blood_group, $roll_no_pf_no;
 $joining_date_db_formatted="";
 
@@ -312,9 +329,9 @@ $joining_date_db_formatted="";
 			
 			
 			$created_at=$date->format("Y-m-d H:i:s");
-			
+		
 			$sql_string="UPDATE users SET 
-					year_of_admission = :year_of_admission, 
+					date_of_joining_institution = :date_of_joining_institution, 
 					email = :email, 
 					branch = :branch,  
 					internal_id = :internal_id, 
@@ -333,7 +350,6 @@ $joining_date_db_formatted="";
 					country = :country, 
 					blood_group = :blood_group, 
 					roll_no_pf_no = :roll_no_pf_no, 
-					joining_date = :joining_date, 
 					created_at = :created_at WHERE 
 					id = :id";
 					
@@ -343,7 +359,7 @@ $joining_date_db_formatted="";
 
 		
 			$retval=$sql->execute(array(
-					':year_of_admission' => $year_of_admission,	
+					':date_of_joining_institution' => $date_of_joining_institution,	
 					':email'	 => $email, 
 					':branch' => $branch, 
 					':internal_id' => $internal_id, 
@@ -406,10 +422,10 @@ function test_input($data) {
 
 function validate_fields() {
 
-global $err_email,$err_password,$err_password_confirm, $err_name, $arr_alert, $err_captcham, $err_branch, $err_dob, $err_year_of_admission;
+global $err_email,$err_password,$err_password_confirm, $err_name, $arr_alert, $err_captcham, $err_branch, $err_dob, $err_date_of_joining_institution;
 global $valid_data;
 global $db, $arr_alert;
-global $email, $password, $name, $dob, $branch, $internal_id, $mobile, $phone, $year_of_admission;
+global $email, $password, $name, $dob, $branch, $internal_id, $mobile, $phone, $date_of_joining_institution;
 global $address1, $address2, $address3, $pin, $district, $state, $country, $blood_group, $roll_no_pf_no, $dob, $joining_date;
 
 $valid_data=true;
@@ -497,24 +513,34 @@ $valid_data=true;
 	$dob = trim($_POST["dob"]);
 	$dob = str_replace("-", "/", $dob);
 	
+
+
+	
+	// check validity of date_of_joining_institution
+	$date_of_joining_institution = trim($_POST["date_of_joining_institution"]);
+	$date_of_joining_institution = str_replace("-", "/", $date_of_joining_institution);
+	list($yy,$mm,$dd)=explode("/", $date_of_joining_institution);
+	if($yy>date("y")) {
+		$err_date_of_joining_institution = "Invalid joining date!";
+		$valid_data = false;
+		}
 	
 	
-	if(!ValidateDate($dob)){
+	if(!ValidStudentDOB($dob)){
+		
 		$valid_data = false;
 		$err_dob = "Please enter valid Date of Birth";
-		write_log("Invalid DOB " . $dob . ">>" . $valid_data . "<<");
 	
 	}
 	
-$year_of_admission = (integer)test_input($_POST['year_of_admission']);	
-	if($year_of_admission<2015 || $year_of_admission>date("Y"))  {
-		$valid_data = false;
-		$err_year_of_admission = "Invalid Year of Admission";
-		
-	}
+
+	
+	
+	
+	
 
 $branch = test_input($_POST["branch"]);
-$internal_id = test_input($_POST["internal_id"]);
+$internal_id = test_input($_POST["login"]);
 $mobile = test_input($_POST["mobile"]);
 $phone = test_input($_POST["phone"]);
 $address1 = ucwords(test_input($_POST["address1"]));
@@ -540,7 +566,7 @@ $joining_date = $_POST['joining_date'];
 
 }
 
-function ValidateDate($date)
+function ValidStudentDOB($date)
 {
 	
 		if(strlen($date)>10) {
@@ -576,6 +602,44 @@ function ValidateDate($date)
     
     return false;
 }
+
+function ValidDate($date)
+{
+	
+		if(strlen($date)>10) {
+			return false;
+			
+			}
+				
+	
+	
+    if (!isset($date) || $date=="")
+    {
+        return false;
+    }
+    
+    list($yy,$mm,$dd)=explode("/",$date);
+    
+
+	// POTENTIAL AREA OF ERROR IN FUTURE ... .. BEWARE ...!
+
+	if($yy<1930 || $yy>2020) {
+		write_log("Date  > 2020  or DOB<1950 is a remote possibility");
+		return false;
+		
+	}
+
+    
+    
+    if ($dd!="" && $mm!="" && $yy!="")
+    {
+        
+        return checkdate($mm,$dd,$yy);
+    }
+    
+    return false;
+}
+
 
 function photo_uploaded(){
 	global $arr_alert, $internal_id;

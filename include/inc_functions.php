@@ -49,6 +49,8 @@ global $db;
 global $enable_log;
 $enable_log=true;
 
+
+
 	$p="SELECT $field FROM $table WHERE $criteria_field = :key_value";
 	if(substr($p,1,10)== ":key_value") {
 			die(substr($p,1,10));
@@ -226,5 +228,17 @@ $html_drop_down .= "</select>";
 return($html_drop_down);
 }
 
+
+function write_log($text, $log_file = "tmp/log.txt"){
+global $enable_log;
+
+if(!$enable_log) return;
+
+$fp = fopen($log_file, 'a');
+fwrite($fp, $text . "\n");
+fclose($fp);
+
+
+}
 
 ?>

@@ -11,7 +11,6 @@ include 'include/inc_functions.php';
 include 'include/db_connection.php';
 include 'include/error_messages.php';
 include 'include/inc_js_and_css.php';
-include 'include/inc_site-header.php';
 include 'include/page-header-and-menu.php';
 
 add_to_error_messages('Thank you.');

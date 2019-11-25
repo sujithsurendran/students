@@ -114,7 +114,7 @@ div.col-sm-12 div.row div.col-sm-2, div.col-sm-12 div.row div.col-sm-2 span.menu
 div.row div.col-sm-12 div.row div.col-sm-2{
 	background-color: #1f618d;
 	text-align: left;
-	width:60%;
+	width:100%;
 	color: #fff;
 
 }
@@ -138,6 +138,21 @@ div.row div.col-sm-12 div.row div.col-sm-2.current-page
 background-color: #eeeff0;;
 color:blue;
 text-align: right;
+}
+
+div.col-sm-2.captcha img{
+width:150px;
+}
+
+div.row div.col-sm-2 span#menu a{ 
+background-color: #1f618d;
+color:#fff;
+
+
+}
+html body form.form-horizontal div#page-header div.container1 div.row div.col-sm-12 div.row div.col-sm-2{
+//	border:0 1 0 0px solid #eeeff0;
+	border-bottom:1px solid red;
 }
 
 

@@ -38,7 +38,7 @@ include 'include/inc_sign-in-2.php';
 								<div class="col-sm-1"></div>
 							
 										<label class="control-label col-sm-3" for admission_no>Enter displayed text</label>
-										<div class="col-sm-2">
+										<div class="col-sm-2 captcha">
 												<img src='./tmp/captcha.jpg' />
 												<input type='text' name='captcha' placeholder = 'Type the above Text' class="form-control"/>
 												
