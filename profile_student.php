@@ -82,7 +82,18 @@ include 'include/inc_profile_student.php';
 			<?php show_error($err_password_confirm, "text-danger", "password_confirm");?>
 			<?php echo data_entry_helper("name", "Name", $name, $err_name) ?>
 			<?php echo data_entry_helper("date_of_joining_institution", "Date of joining Institution", $date_of_joining_institution, $err_date_of_joining_institution) ?>
-			<?php echo data_entry_helper("joining_date", "Date of joining(Employee)", $joining_date, $err_joining_date) ?>
+			
+			<?php 
+
+			
+			// Include this later on for Employees
+			//if($_SESSION['user_type_id'] == USER_TYPE_STAFF) {
+	
+							
+					echo data_entry_helper("joining_date", "Date of joining(for Employees)", $joining_date, $err_joining_date) ;
+					
+			//}
+			?>
 			
 			
 			

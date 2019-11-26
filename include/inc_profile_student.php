@@ -3,7 +3,8 @@
 global $privileges;
 
 // variables ---
-$email = $password = $name = $joining_date = "";
+$email = $password = $name = $joining_date = $internal_id = $date_of_joining_institution = $branch = $roll_no_pf_no = $blood_group = $mobile = "";
+$phone = $address1 = $address2 = $address = $district = $state = $country = ""; 
 
 $err_email = $err_name = $err_dob = $err_password = $err_captcha = $err_password_confirm = $err_internal_id = $err_branch = $err_date_of_joining_institution = $err_joining_date ="";
 $err_blood_group = $err_mobile = $err_phone = $err_address1 = $err_pin = $err_district = $err_state = $err_country = "";
@@ -426,7 +427,7 @@ global $err_email,$err_password,$err_password_confirm, $err_name, $arr_alert, $e
 global $valid_data;
 global $db, $arr_alert;
 global $email, $password, $name, $dob, $branch, $internal_id, $mobile, $phone, $date_of_joining_institution;
-global $address1, $address2, $address3, $pin, $district, $state, $country, $blood_group, $roll_no_pf_no, $dob, $joining_date;
+global $address1, $address2, $address3, $pin, $district, $state, $country, $blood_group, $roll_no_pf_no, $dob, $joining_date, $date_of_joining_institution;
 
 $valid_data=true;
 
@@ -439,9 +440,7 @@ $valid_data=true;
  		if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
  			$err_email = "EmailID is invalid";
  			$valid_data=false;
- 		}elseif($email==$internal_id) {
- 			$valid_data=true;
- 			}
+ 		}
  	}
 
 
