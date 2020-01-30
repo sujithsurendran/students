@@ -19,7 +19,6 @@ include 'include/page-header-and-menu.php';
 
 
 
-
 if(!isset($_SESSION['user_id'])) {
 	redirect('index.php');
 }

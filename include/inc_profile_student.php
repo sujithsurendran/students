@@ -30,6 +30,8 @@ if(!isset($_SESSION['user_id'])) {
 
 
 
+
+
 if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['btn_update_profile']) ) {
 	
 	

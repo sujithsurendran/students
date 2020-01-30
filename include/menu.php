@@ -54,9 +54,17 @@ echo '<div class="row">';
 					echo '<div class="col-sm-2"></div>';
 				
 				
+												if(isset($_SESSION['name'])){
+
+													$name = $_SESSION['name'];
+												
+												}else {
+													$name="";
+												}				
+				
 				
 												if(isset($_SESSION['user_id'])) { 
-													echo '<div class="col-sm-2"><span id="menu"><a href="logout.php"><span >Logout ' . XBVGHEYT (&*^*&(^) if(isset($_SESSION['name'])){echo $_SESSION['name'];} . '</span></a></span></div>';
+													echo '<div class="col-sm-2"><span id="menu"><a href="logout.php"><span >Logout &nbsp;[' . $name . ']</span></a></span></div>';
 															
 
 

@@ -14,9 +14,13 @@ error_reporting(E_ALL);
 
 
 include 'include/inc_profile_student.php';
+/*
 
-
-$photo_file_name = $_SESSION['photo_file_name'];
+if(  isset($_SESSION['photo_file_name']) ) {
+	
+	$photo_file_name = $_SESSION['photo_file_name'];
+}
+*/
 
 ?>
 
