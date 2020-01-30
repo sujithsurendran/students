@@ -127,7 +127,11 @@ return $is_registered_user;
 
 }
 function add_to_error_messages($msg) {	
+	
+
+	
 	$_SESSION['error_messages'] = $_SESSION['error_messages'] . "<br />" . $msg;
+
 
 }
 
@@ -201,6 +205,7 @@ return($data_entry_helper_html);
 
 }
 
+
 function show_message($message) {
 	return '
 			<div class="row" style="text-align:right;">
@@ -232,6 +237,7 @@ return($html_drop_down);
 function write_log($text, $log_file = "tmp/log.txt"){
 global $enable_log;
 
+	
 if(!$enable_log) return;
 
 $fp = fopen($log_file, 'a');

@@ -58,8 +58,7 @@
 </div><!--  started in main page -->
 
 
-
-			<!--This is closed in footer -->
+		<!--This is closed in footer -->
 <div class="container" id="body-contents">
   <div class="row">
     <div class="col-sm-12">

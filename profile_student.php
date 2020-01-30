@@ -3,18 +3,20 @@ $page="profile";
 $page_name="Profile";
 
 global $arr_alert;
+global $name,$date_of_joining_institution,$joining_date,$dob,$email,$branch ,$login;
+global $roll_no_pf_no,$mobile,$phone ,$address1,$address2 ,$address3,$pin ,$district, $state,$country, $blood_group,$user_type;
+global $err_email,$err_password,$err_password_confirm, $err_name, $arr_alert, $err_captcham, $err_branch, $err_dob;
+global $err_date_of_joining_institution, $photo_file_name;
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 
-
-
-
-
 include 'include/inc_profile_student.php';
 
+
+$photo_file_name = $_SESSION['photo_file_name'];
 
 ?>
 
@@ -30,7 +32,7 @@ include 'include/inc_profile_student.php';
 <!-- =========== FORM START ================= -->
 
 
-<?php echo data_entry_helper("login", "Internal id/Admission Number(Login)", $internal_id, $err_internal_id,true);?>
+<?php echo data_entry_helper("login", "Internal id/Admission Number(Login)", $login, $err_login,true);?>
 <?php echo data_entry_helper("email", "Email", $email, $err_email);?>
 			<div class="row">
 				<div class="control-label col-sm-4"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#change_password">Change Password</button></div>
@@ -48,7 +50,7 @@ include 'include/inc_profile_student.php';
 									<br />
 									<label class="control-label col-sm-6" for password>Password</label>
 									<div class="col-sm-6">
-										<input type="password" name="password" class="form-control" id="password" />
+										<input type="password" name="password" class="form-control" id="password" value = ""/>
 			
 									</div>
 									
@@ -64,7 +66,7 @@ include 'include/inc_profile_student.php';
 			
 									<label class="control-label col-sm-6" for password_confirm >Confirm Password</label>
 									<div class="col-sm-6">
-										<input type="password" name="password_confirm" class="form-control" id="password_confirm" />
+										<input type="password" name="password_confirm" class="form-control" id="password_confirm"  value = "" />
 			
 									</div>
 								</div>
@@ -109,7 +111,12 @@ include 'include/inc_profile_student.php';
 								<div>
 									<label class="newbtn">
 											<div width="85px;" style="text-align:center;">
-												<img id="profile_photo" src="<?php echo "uploads/reduced/" . $internal_id . ".jpg" ?>" width="75px;"/>
+												<!--img id="profile_photo" src="<?php echo "uploads/reduced/" . $login . ".jpg" ?>" width="75px;"/-->
+												<!-- img id="profile_photo" src="<?php echo "uploads/reduced/" . $photo_file_name; ?>" width="75px;"/-->
+												<img id="profile_photo" src="<?php echo $photo_file_name; ?>" width="75px;"/>
+												
+												
+
 											</div>
 											<input id="fileToUpload" class='pis' onchange="readURL(this);" type="file" name="fileToUpload">
 									</label>
@@ -118,10 +125,10 @@ include 'include/inc_profile_student.php';
 
 				</div><!--div class="form-group"-->					
 			</div>
-			<?php echo show_message("If you do not find the uploaded photo. Please try Refreshing ->Ctr+F5");?>			
+			<?php //echo show_message("If you do not find the uploaded photo. Please try Refreshing ->Ctr+F5");?>			
 			<!-- Photo upload End -->
 
-
+		<?php //echo data_entry_helper("photo_file_name", "Photo File Name", $photo_file_name, $err_photo_file_name, "false") ?>
 
 
 			<!-- DOB start-->

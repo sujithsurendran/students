@@ -5,7 +5,7 @@
 </div>
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-<div style="position:absolute;x:0;y:0;"><?php if(isset($_SESSION['user_id'])) echo  $_SESSION['user_id']; ?></div>
+<div style="position:absolute;x:0;y:0;"><?php //if(isset($_SESSION['user_id'])) echo  $_SESSION['user_id']; ?></div>
 
 
 				<script type="text/javascript" >

@@ -3,10 +3,15 @@ function print_alerts() {
 global $arr_alert;	
 	
 
-		if(sizeof($arr_alert) >= 0 && $_SESSION['error_messages'] <> "")  { 	
+
+		if(sizeof($arr_alert) >= 0 && $_SESSION['error_messages'] <> "")  { 
+		
+			
 		echo '<div class="alert alert-info" role="alert"> <button type="button" class="close" data-dismiss="alert">×</button>
 			<strong>'. print_array_in_lines($arr_alert) .'</strong> 
 		</div>';
+	
+
 		reset($arr_alert);
 		$_SESSION['error_messages']="";
 		}

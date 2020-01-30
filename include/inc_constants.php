@@ -35,6 +35,11 @@ define("USER_TYPE_STAFF", "20");
 define("RECORDS_PER_PAGE", "5");
 
 
+define("STUDENT_MAX_AGE", "56");
+define("STUDENT_MIN_AGE", "12");
+
+define("APPLICATION_MIN_YEAR", "1950");
+define("APPLICATION_MAX_YEAR", "2035");
 
 
 $arr_alert=array();

@@ -2,4 +2,4 @@
 ./include/secure/inc_constants.php
 *~
 ./log/*
-
+./uploads/*

@@ -2,17 +2,16 @@
 
 global $privileges;
 
-// variables ---
-$email = $password = $name = $joining_date = $internal_id = $date_of_joining_institution = $branch = $roll_no_pf_no = $blood_group = $mobile = "";
-$phone = $address1 = $address2 = $address = $district = $state = $country = ""; 
+$email = $password = $name = $joining_date = $login = $date_of_joining_institution = $branch = $roll_no_pf_no = $blood_group = $mobile = "";
+$phone = $address1 = $address2 = $address = $district = $state = $country = $photo_file_name =  ""; 
 
-$err_email = $err_name = $err_dob = $err_password = $err_captcha = $err_password_confirm = $err_internal_id = $err_branch = $err_date_of_joining_institution = $err_joining_date ="";
+$err_email = $err_name = $err_dob = $err_password = $err_captcha = $err_password_confirm = $err_login = $err_branch = $err_date_of_joining_institution = $err_joining_date ="";
 $err_blood_group = $err_mobile = $err_phone = $err_address1 = $err_pin = $err_district = $err_state = $err_country = "";
-$err_address1 = $err_address2 = $err_address3 = $err_roll_no_pf_no = $err_joining_date = $err_user_type ="" ;
-// -----
+$err_address1 = $err_address2 = $err_address3 = $err_roll_no_pf_no = $err_joining_date = $err_user_type =  $err_photo_file_name  = "" ;
 
 
 $user = fetch_data($_SESSION["user_id"]);
+
 if(is_null($user)) {
 	
 		$_SESSION["user_id"] = null;
@@ -23,101 +22,91 @@ if(is_null($user)) {
 	}
 
 
-
+if(!isset($_SESSION['user_id'])) {
+	
+		redirect('sign-in-1.php');	
+	
+}
 
 
 
 if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['btn_update_profile']) ) {
+	
+	
+	
+	assign_posted_values($_POST);
+	$valid_data = validate_fields();
 
+	if($valid_data) {
+			$ret_val = upload_photo($photo_file_name);
+			if($ret_val != ""){
+					$valid_data = false;
+					add_to_error_messages($ret_val);				// display error messages for upload photo	
+					redirect('profile.php');
+			}
+	}
 
-	if(validate_fields()) {
-				
-					if(photo_uploaded()) {
-							// photo upload successful
-						}else {
-							array_push($arr_alert,"Error while uploading Photo");
-							
-					}// file upload End
-
+	if($valid_data) {
+		
 
 					if(update_or_write()){
 						
-						
-						array_push($arr_alert, "Profile Updated.");
-						//redirect('dashboard.php');
+						add_to_error_messages("Profile Updated.");
+						//redirect('profile.php');
 						
 					}else {
-						array_push($arr_alert,"Error.");
+						add_to_error_messages("Sorry, Unable to update.");
 			
 					}
 		
-
-		
 	}else {
+
 				// validation failed
-				array_push($arr_alert, "Invalid data.");
+				add_to_error_messages("Invalid data.");
+				
 	}
 	
 	
-}elseif(isset($_SESSION['user_id'])){
-
-
+}elseif($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['btn_cancel']) ) {
 	$user = fetch_data($_SESSION["user_id"]);
-	
-	
-	$name = $user['name'];
-	
-	/* $date_of_joining_institution */
-	if(!is_null($user['date_of_joining_institution'])){
-		list($dd,$mm,$yy)=explode("-",$user['date_of_joining_institution']);
-		$date_of_joining_institution = $dd . "/" . $mm . "/" . $yy;
-	}else {
-		$date_of_joining_institution="";
-	}	
-	
-	
-
-	/* $joining_date  for Employees*/
-	if(!is_null($user['joining_date'])){
-		list($dd,$mm,$yy)=explode("-",$user['joining_date']);
-		$joining_date = $dd . "/" . $mm . "/" . $yy;
-	}else {
-		$joining_date="";
-	}	
-	
-
-
-	
-	
-	$dob = $user['dob'];
-
-	list($dd,$mm,$yy)=explode("-",$dob);
-	$dob = $dd . "/" . $mm . "/" . $yy;
-
-
-	
-
-	$email = $user['email'];	
-	$branch = $user['branch'];
-	$internal_id = $user['login'];
-	$roll_no_pf_no = $user['roll_no_pf_no'];
-	$mobile = $user['mobile'];
-	$phone = $user['phone'];
-	$address1 = $user['address1'];
-	$address2 = $user['address2'];
-	$address3 = $user['address3'];
-	$pin = $user['pin'];
-	$district = $user['district'];
-	$state = $user['state'];
-	$country = $user['country'];
-	$blood_group = $user['blood_group_id'];
-	$user_type = get_value_from_table("user_types", "name", "id", $user['user_type_id']);
-
-	
-}else {
-redirect('sign-in-1.php');	
+	assign_fetched_values($user);	
 	
 }
+
+
+// if control does not come from POSt, load details from db
+// if control comes from POST, values are already held in global variables
+if( $_SERVER['REQUEST_METHOD'] != "POST" &&  isset($_SESSION['user_id'])) {
+	
+	
+
+	
+	$user = fetch_data($_SESSION["user_id"]);
+	assign_fetched_values($user);
+	
+}elseif(  $_SERVER['REQUEST_METHOD'] == "POST" && isset($_SESSION['user_id'])) {
+	
+	
+	
+		
+	
+		// invoked after update and when there is validation error	
+	
+		// Do nothing
+		// data already loaded from db  Session[UserID] to global variables through assign_posted_values
+
+}
+
+
+
+
+/*		==============================================
+
+			- - - - - -  Functions - - - - - -
+
+			==============================================
+*/
+
 
 function fetch_data($id) {
 global $db;
@@ -135,14 +124,13 @@ $ret_val = false;
 $enable_log=true;
 		
 
-		try{
+	//	try{
 			
 			
-			$db->beginTransaction();
+	//		$db->beginTransaction();
 			// Begin transaction
-								if(isset($_SESSION['new_user'])) {
+								if(!isset($_SESSION['new_user'])) {
 									
-					
 									// existing user				
 					
 										if($password=="") {
@@ -168,7 +156,7 @@ $enable_log=true;
 									
 								}else {
 									
-									
+
 									// new user. Just write data
 									$password = md5($password);				
 									$ret_val = write_data();
@@ -181,7 +169,7 @@ $enable_log=true;
 								
 								
 								
-		$db->commit();	
+	/*	$db->commit();	
 		write_log("Commit trans- update_or_write()");
 		}catch(PDOException $e){
 			
@@ -192,7 +180,7 @@ $enable_log=true;
 			// End transaction
 			$db->rollBack();
 			
-		}	
+		}	*/
 
 
 return $ret_val;
@@ -205,9 +193,9 @@ function write_data(){
 	
 
 global $db, $arr_alert;
-global $email, $password, $name, $dob, $branch, $internal_id, $mobile, $phone, $date_of_joining_institution;
+global $email, $password, $name, $dob, $branch, $login, $mobile, $phone, $date_of_joining_institution;
 global $address1, $address2, $address3, $pin, $district, $state, $country, $blood_group, $roll_no_pf_no, $dob, $joining_date;
-
+global $resized_image_file;
 global $enable_log;
 $enable_log=true;
 
@@ -225,14 +213,15 @@ $enable_log=true;
 		$joining_date_db_formatted = $yy . "-" . $mm . "-" . $dd;
 
 
+
 		try {
 			
 			
 			$date = new DateTime();
 
-			$sql = $db->prepare("INSERT INTO users (id, date_of_joining_institution, email, branch, internal_id, name, dob, password, password_hash, 
-			mobile, phone, address1, address2, address3, pin, district, state, country, blood_group, roll_no_pf_no, joining_date, created_at)
-			VALUES(:id, :date_of_joining_institution, :email, :branch, :internal_id, :name, :dob, :password, :password_hash, :mobile, :phone, :address1, :address2, :address3, 
+			$sql = $db->prepare("INSERT INTO users (id, date_of_joining_institution, email, branch, login, name, dob, password, password_hash, 
+			mobile, phone, address1, address2, address3, pin, district, state, country, blood_group_id, roll_no_pf_no, joining_date, created_at)
+			VALUES(:id, :date_of_joining_institution, :email, :branch, :login, :name, :dob, :password, :password_hash, :mobile, :phone, :address1, :address2, :address3, 
 			:pin, :district, :state, :country, :blood_group, :roll_no_pf_no, :joining_date, :created_at)");
 			
 			
@@ -242,13 +231,15 @@ $enable_log=true;
 
 			$blood_group = get_value_from_table("blood_groups", "name", "name", $blood_group);
 			$branch = get_value_from_table("branches", "name", "name", $branch);
+			$created_date = $date->format("Y-m-d H:i:s");			
+			
 			
 			$sql->execute(array(
 					':id' => $id,
 					':date_of_joining_institution' => date("Y-m-d H:i:s", strtotime($date_of_joining_institution)),
 					':email'	 => $email, 
 					':branch' => $branch, 
-					':internal_id' => $internal_id, 
+					':login' => $login, 
 					':name' => $name, 
 					':dob' => date("Y-m-d H:i:s", strtotime($dob_db_formatted)),
 					':password' => $password, 
@@ -265,10 +256,14 @@ $enable_log=true;
 					':blood_group' => $blood_group,
 					':roll_no_pf_no' => $roll_no_pf_no,
 					':joining_date' => date("Y-m-d H:i:s", strtotime($joining_date_db_formatted)),			
-					':created_at' => $date->format("Y-m-d H:i:s")
+					':created_at' => $created_date
 				    )
 			     );
 			
+					$_SESSION['photo_file_name'] = substr($_SESSION['photo_file_name'],0,strlen($_SESSION['photo_file_name'])-4);
+
+					rename($_SESSION['photo_file_name'] . ".jpg", $_SESSION['photo_file_name'] . "_" . preg_replace('/[^0-9]/', '', $created_at) . ".jpg" );
+					// file is changed to solve the issue of image using the cached file if same name is used		
 					
 		   return true;
 
@@ -292,9 +287,9 @@ function update_data(){
 	
 
 global $db, $arr_alert;
-global $email, $password, $name, $dob, $branch, $internal_id, $mobile, $phone, $date_of_joining_institution_db_formatted;
-global $address1, $address2, $address3, $pin, $district, $state, $country, $blood_group, $roll_no_pf_no;
-$joining_date_db_formatted="";
+global $email, $password, $name, $dob, $branch, $login, $mobile, $phone, $date_of_joining_institution;
+global $address1, $address2, $address3, $pin, $district, $state, $country, $blood_group, $roll_no_pf_no,$joining_date;
+$joining_date_db_formatted = $resized_image_file = $photo_file_name = "";
 
 		
 			
@@ -302,13 +297,25 @@ $joining_date_db_formatted="";
 		$dob_db_formatted = $yy . "-" . $mm . "-" . $dd;
 
 
+		
+
 	
-		if($joining_date != "" && $joining_date != "1970-01-01"){
-			list($yy,$mm,$dd) = explode("-",$joining_date);
+		if($joining_date != "" && $joining_date != "1970/01/01"){
+			list($yy,$mm,$dd) = explode("/",$joining_date);
 			$joining_date_db_formatted = $yy . "-" . $mm . "-" . $dd;
 		}else {
 			
 			$joining_date_db_formatted="";
+			
+			}
+
+
+		if($date_of_joining_institution != "" && $date_of_joining_institution != "1970/01/01"){
+			list($yy,$mm,$dd) = explode("/",$date_of_joining_institution);
+			$date_of_joining_institution_db_formatted = $yy . "-" . $mm . "-" . $dd;
+		}else {
+			
+			$date_of_joining_institution_db_formatted="";
 			
 			}
 
@@ -335,7 +342,7 @@ $joining_date_db_formatted="";
 					date_of_joining_institution = :date_of_joining_institution, 
 					email = :email, 
 					branch = :branch,  
-					internal_id = :internal_id, 
+					login = :login, 
 					name = :name, 
 					dob = :dob, 
 					password = :password, 
@@ -349,8 +356,9 @@ $joining_date_db_formatted="";
 					district = :district, 
 					state = :state,
 					country = :country, 
-					blood_group = :blood_group, 
+					blood_group_id = :blood_group, 
 					roll_no_pf_no = :roll_no_pf_no, 
+					joining_date = :joining_date, 			
 					created_at = :created_at WHERE 
 					id = :id";
 					
@@ -360,10 +368,10 @@ $joining_date_db_formatted="";
 
 		
 			$retval=$sql->execute(array(
-					':date_of_joining_institution' => $date_of_joining_institution,	
+					':date_of_joining_institution' => $date_of_joining_institution_db_formatted,	
 					':email'	 => $email, 
 					':branch' => $branch, 
-					':internal_id' => $internal_id, 
+					':login' => $login, 
 					':name' => $name, 
 					':dob' => date("Y-m-d H:i:s", strtotime($dob_db_formatted)),
 					':password' => $password, 
@@ -386,10 +394,26 @@ $joining_date_db_formatted="";
 			     );
 
 
-			//write_log("Profile Update:(" . ($retval==true?"Success":"Failure") . ")" . date("Y-m-d H:i:s", strtotime($dob_db_formatted)) , date("Y-m-", strtotime($dob_db_formatted)) . "user.log");
-			$log_file_name = "tmp/" . $date->format("Y-m") . "_user.log";
+					//	---------------
+					// file is changed to solve the issue of image using the cached file if same name is used		
+					//	-----------------
+
+					//strip jpg
+					$_SESSION['photo_file_name'] = substr($_SESSION['photo_file_name'],0,strlen($_SESSION['photo_file_name'])-4);
+					
+					// rename file with date string
+					rename($_SESSION['photo_file_name'] . ".jpg", $_SESSION['photo_file_name'] . "_" . preg_replace('/[^0-9]/', '', $created_at) . ".jpg" );
+					
+					//assign new file name to session
+					$_SESSION['photo_file_name'] = $_SESSION['photo_file_name'] . "_" . preg_replace('/[^0-9]/', '', $created_at) . ".jpg";
+					
+					$photo_file_name = $_SESSION['photo_file_name'];
+
+
+
+			$log_file_name = "tmp/" . $date->format("Y_m") . "_user.log";
 			
-			$logging_info = "Updated by:" . $_SESSION['user_id'] . ", " . $name . "[id=" . $internal_id . "]Profile Update:(" . ($retval==true?"Success":"Failure") . ")" . date("Y-m-d H:i:s", strtotime($dob_db_formatted)); 
+			$logging_info = "Updated by:" . $_SESSION['user_id'] . ", " . $name . "[id=" . $login . "]Profile Update:(" . ($retval==true?"Success":"Failure") . ")" . date("Y-m-d H:i:s", strtotime($dob_db_formatted)); 
 			write_log($logging_info ,  $log_file_name);
 					
 		   return true;
@@ -421,48 +445,37 @@ function test_input($data) {
 
 
 
+/*		----------------------------
+
+				validate_fields
+		------------------------------			
+
+*/
+
+
 function validate_fields() {
 
 global $err_email,$err_password,$err_password_confirm, $err_name, $arr_alert, $err_captcham, $err_branch, $err_dob, $err_date_of_joining_institution;
 global $valid_data;
 global $db, $arr_alert;
-global $email, $password, $name, $dob, $branch, $internal_id, $mobile, $phone, $date_of_joining_institution;
+global $email, $password, $password_confirm, $name, $dob, $branch, $login, $mobile, $phone, $date_of_joining_institution;
 global $address1, $address2, $address3, $pin, $district, $state, $country, $blood_group, $roll_no_pf_no, $dob, $joining_date, $date_of_joining_institution;
+
+
+
 
 $valid_data=true;
 
 	//  email
- 	if (empty($_POST['email'])){
- 		$err_email = "Please enter email";
- 		$valid_data=false;
- 	} else {
- 		$email = test_input($_POST['email']);
+ 	if (empty($email)){$err_email = "Please enter email";$valid_data=false;} 
+ 	else {
  		if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
- 			$err_email = "EmailID is invalid";
- 			$valid_data=false;
+ 				$err_email = "EmailID is invalid";
+ 				$valid_data=false;
  		}
  	}
 
-
-
-	//   password
-  	/*if(empty(trim($_POST['password']))) {
-  		$err_password = "Password cannot be empty";
-  		$valid_data=false;
-  	} else {
-		$password = test_input($_POST["password"]);
-	}*/
-
-	//   password confirm
-  	/*if(empty(trim($_POST['password_confirm']))) {
-  		$err_password_confirm = "Please confirm the Password by ReEntering";
-  		$valid_data=false;
-  	} else {
-		$password = test_input($_POST["password_confirm"]);
-	}*/
-
-
-	if($_POST['password_confirm']== $_POST['password']){
+	if($password_confirm == $password){
 	
 		// password confirm ok		
 	
@@ -487,73 +500,63 @@ $valid_data=true;
 	
 
 	//   name
-  	if(empty($_POST['name'])) {
+  	if(empty($name)) {
   		$err_name = "Name cannot be empty";
   		$valid_data=false;
   	}  else {
-  		$name = ucwords(test_input($_POST["name"]));
-  		if(!preg_match("/^[a-zA-Z ]*$/", $name))  {
-  			$err_name = "Invalid name! Only letters, White Spaces and '.' is allowed";
+  		if(!preg_match("/^[a-zA-Z '.]*$/", $name))  {
+  			$err_name = "Invalid name! Only letters, White Spaces and '.' is allowed" . "[$name]";
   			$valid_data=false;
   		}
   	}
-  	
 
 	//   internal id
-  	if(empty($_POST['internal_id'])) {
+	
+
+
+  	if(empty($login)) {
   		$err_name = "Please enter your Admission Number";
   		$valid_data=false;
-  	}  else {
-  		$internal_id = test_input($_POST["internal_id"]);
-
   	}
 
+
+	
+
 	// check dob validity
-	$dob = trim($_POST["dob"]);
 	$dob = str_replace("-", "/", $dob);
 	
-
-
 	
 	// check validity of date_of_joining_institution
-	$date_of_joining_institution = trim($_POST["date_of_joining_institution"]);
-	$date_of_joining_institution = str_replace("-", "/", $date_of_joining_institution);
-	list($yy,$mm,$dd)=explode("/", $date_of_joining_institution);
-	if($yy>date("y")) {
-		$err_date_of_joining_institution = "Invalid joining date!";
-		$valid_data = false;
-		}
-	
-	
-	if(!ValidStudentDOB($dob)){
+	//$date_of_joining_institution = str_replace("-", "/", $date_of_joining_institution);
+
 		
+
+		if(!ValidDate($date_of_joining_institution)){
+
+							$valid_data = false;	
+							$err_date_of_joining_institution = "Date of joining is incorrect!";
+							add_to_error_messages("Date of joining is incorrect!");
+		}else {
+				
+							list($yy,$mm,$dd)=explode("/", $date_of_joining_institution);
+							
+								if($yy>date("Y")) {
+										$err_date_of_joining_institution = "Joining date cannot be beyond the current date";
+										$valid_data = false;
+								}
+			
+		}		//$date_of_joining_institution
+
+
+
+
+
+	if(!ValidStudentDOB($dob)){
+
 		$valid_data = false;
 		$err_dob = "Please enter valid Date of Birth";
 	
 	}
-	
-
-	
-	
-	
-	
-
-$branch = test_input($_POST["branch"]);
-$internal_id = test_input($_POST["login"]);
-$mobile = test_input($_POST["mobile"]);
-$phone = test_input($_POST["phone"]);
-$address1 = ucwords(test_input($_POST["address1"]));
-$address2 = ucwords(test_input($_POST["address2"]));
-$address3  = ucwords(test_input($_POST["address3"]));
-$pin = test_input($_POST["pin"]);
-$district = ucwords(test_input($_POST["district"]));
-$state = ucwords(test_input($_POST["state"]));
-$country = ucwords(test_input($_POST["country"]));
-$blood_group = test_input($_POST["blood_group"]);
-$roll_no_pf_no = test_input($_POST["roll_no_pf_no"]);
-$password = trim($_POST['password']);
-
-$joining_date = $_POST['joining_date'];
 
 
 	//   ------------- Validation of fields -END-
@@ -565,12 +568,18 @@ $joining_date = $_POST['joining_date'];
 
 }
 
+
+
+
+
+
+
+
 function ValidStudentDOB($date)
 {
 	
 		if(strlen($date)>10) {
 			return false;
-			
 			}
 				
 	
@@ -585,27 +594,24 @@ function ValidStudentDOB($date)
 
 	// POTENTIAL AREA OF ERROR IN FUTURE ... .. BEWARE ...!
 
-	if($yy<1950 || $yy>2010) {
-		write_log("Date of Birth > 2010  or DOB<1950 is a remote possibility");
+	if($yy<(date("Y")-STUDENT_MAX_AGE) || $yy>(date("Y")-STUDENT_MIN_AGE)) {
 		return false;
-		
 	}
 
     
     
     if ($dd!="" && $mm!="" && $yy!="")
     {
-        
         return checkdate($mm,$dd,$yy);
     }
     
-    return false;
 }
 
 function ValidDate($date)
 {
 	
-		if(strlen($date)>10) {
+		if(strlen($date)!=10) {
+
 			return false;
 			
 			}
@@ -622,8 +628,8 @@ function ValidDate($date)
 
 	// POTENTIAL AREA OF ERROR IN FUTURE ... .. BEWARE ...!
 
-	if($yy<1930 || $yy>2020) {
-		write_log("Date  > 2020  or DOB<1950 is a remote possibility");
+	if($yy < APPLICATION_MIN_YEAR || $yy>APPLICATION_MAX_YEAR) {
+		write_log("Date  > APPLICATION_MIN_YEAR  or DOB < APPLICATION_MIN_YEAR is a remote possibility");
 		return false;
 		
 	}
@@ -634,92 +640,131 @@ function ValidDate($date)
     {
         
         return checkdate($mm,$dd,$yy);
-    }
+    }else {
     
-    return false;
+    	return false;
+    
+    }
 }
 
 
-function photo_uploaded(){
-	global $arr_alert, $internal_id;
+
+
+
+
+/*
+function upload_photo
+	returns "" if success 
+or error message if failure
+*/
+
+
+function upload_photo($old_photo){
+
+global $resized_image_file, $photo_file_name;
+
+$uploadOk = true;
+$return_str="";
+
+	global $login;
 	
 					if(empty(basename($_FILES["fileToUpload"]["name"])))	 {
-						return true;
+						return "";
 					}else {
+						// do nothing
+						$uploadOk=true;
 					}				
 	
 				$target_dir = "uploads";
 				$uploaded_file = $target_dir . "/original/" .  basename($_FILES["fileToUpload"]["name"]) ;
 				
 
-			
-
-
-				
-				
-				$uploadOk = 1;
 				$imageFileType = strtolower(pathinfo($uploaded_file,PATHINFO_EXTENSION));
 				
+				
+				// Check if image file is actual image or fake image
+				
+				if(!empty($_FILES["fileToUpload"]["tmp_name"])){
+					$uploadOk=true;
+		    	$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+		    }else {
+		    	$uploadOk=false;
+		    	return "Selected file is not an image. Pls upload a proper photo.";
+		    }
 
-								
-				
-				
-				// Check if image file is a actual image or fake image
-				if(isset($_POST["submit"])) {
-				    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-				    if($check !== false) {
-				        $uploadOk = true;
+
+		    if($check != false) {
+					$uploadOk=true;
 				        
-				    } else {
-				        array_push($arr_alert, "File is not an image.");
-				        $uploadOk = false;
-				        return($uploadOk);
-				    }
-				}
-				
+			    } else {
+						$uploadOk=false;	
+		        return "Selected file is not an image. Pls upload a proper photo.";
+
+			    }
+		
 				// Check file size
-				if ($_FILES["fileToUpload"]["size"] > 500000) {
-				    array_push($arr_alert, "Sorry, your file is too large.");
-				    $uploadOk = false;
-				}
+				if ($_FILES["fileToUpload"]["size"] > 5000000) {
+
+						$uploadOk=false;
+				    return "Sorry, your file is too large.";
+
+				}else {
+
+					$uploadOk=true;
+					
+					}
+				
+
 				// Allow certain file formats
 				if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
 				&& $imageFileType != "gif" ) {
-				    array_push($arr_alert, "Sorry, only JPG, JPEG, PNG & GIF files are allowed."); 
-				    $uploadOk = false;
+				   return "Sorry, only JPG, JPEG, PNG & GIF files are allowed."; 
+				   $uploadOk = false;
 				}
 				// Check if $uploadOk is set to 0 by an error
-				if ($uploadOk == 0) {
-				    array_push($arr_alert, "Sorry, your file was not uploaded.");
+				if ($uploadOk == false) {
+				    return "Sorry, Photo could not be uploaded.";
 				// if everything is ok, try to upload file
 				} else {
 				    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $uploaded_file)) {
 				    	
-				    		$jpg_image = $target_dir . "/original/" . $internal_id . "_.jpg";
+				    		$jpg_image = $target_dir . "/original/" . $login . "_.jpg";
 				    		convertImage($uploaded_file, $jpg_image , 100);
 				    		list($width, $height) = getimagesize($jpg_image);
 								$new_height = 150;
 								$new_width = ($new_height/$height)*$width;
 								
-								$resized_image_file = $target_dir . "/reduced/" . $internal_id . ".jpg";
+								$resized_image_file = $target_dir . "/reduced/" . $login . ".jpg";
 								$image_resource = imagecreatetruecolor($new_width, $new_height);
 
 								$image = imagecreatefromjpeg($jpg_image);
 								imagecopyresampled($image_resource, $image, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
 								imagejpeg($image_resource, $resized_image_file, 100);
-			    					unlink($jpg_image);
-
-				        //echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-				        
+			    			unlink($jpg_image);
+				        $_SESSION['photo_file_name'] = $resized_image_file;
+				        unlink($old_photo);
 				    } else {
-				        array_push($arr_alert, "Sorry, there was an error uploading your file.");
+				    		$uploadOk=false;
+				        $return_str = "Sorry, there was an error uploading your file.";
+				        
 				    }
 				}	
 	
 
+	if($uploadOk == true){
+		return "";
+	}else {
+		return $return_str;
+		}		
 
-return $uploadOk;							
+
+
 }
+
+
+
+
+
 function convertImage($originalImage, $outputImage, $quality)
 {
     // jpg, png, gif or bmp?
@@ -742,6 +787,139 @@ function convertImage($originalImage, $outputImage, $quality)
     imagedestroy($imageTmp);
 
     return 1;
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------- 
+Function to assign $_POST values to global variables
+-----------------------------*/
+function assign_posted_values($posted_data){
+
+
+
+global $db, $arr_alert;
+global $email, $password, $name, $dob, $branch, $login, $mobile, $phone, $date_of_joining_institution;
+global $address1, $address2, $address3, $pin, $district, $state, $country, $blood_group, $roll_no_pf_no;
+global $dob, $joining_date, $date_of_joining_institution, $photo_file_name;
+
+
+	$email = test_input($_POST['email']);
+	$password = $_POST['password'];
+	$password_confirm = $_POST['password_confirm'];
+	$name = format_strings(test_input($_POST['name']));
+	$login = $_POST['login'];
+	$dob = $_POST["dob"];
+	$date_of_joining_institution = $_POST["date_of_joining_institution"];
+	$branch = test_input($_POST["branch"]);
+	$mobile = test_input($_POST["mobile"]);
+	$phone = test_input($_POST["phone"]);
+	$address1 = format_strings(test_input($_POST["address1"]));
+	$address2 = format_strings(test_input($_POST["address2"]));
+	$address3  = format_strings(test_input($_POST["address3"]));
+	$pin = test_input($_POST["pin"]);
+	$district = format_strings(test_input($_POST["district"]));
+	$state = format_strings(test_input($_POST["state"]));
+	$country = format_strings(test_input($_POST["country"]));
+	$blood_group = test_input($_POST["blood_group"]);
+	$roll_no_pf_no = test_input($_POST["roll_no_pf_no"]);
+	$password = trim($_POST['password']);
+	$joining_date = $_POST['joining_date'];
+	
+	//$photo_file_name = $login . preg_replace('/[^0-9]/', '', $user['created_at']) . "jpg";
+	
+ 	$photo_file_name = $_SESSION['photo_file_name'];
+ 	
+
+ 	
+}
+
+
+function assign_fetched_values($user) {
+
+global $name,$date_of_joining_institution,$joining_date,$dob,$email,$branch ,$login;
+global $roll_no_pf_no,$mobile,$phone ,$address1,$address2 ,$address3,$pin ,$district, $state,$country, $blood_group,$user_type;
+global $photo_file_name;
+
+
+
+	$name = $user['name'];
+	$_SESSION['name'] = $name;
+	
+	/* $date_of_joining_institution */
+	if(!is_null($user['date_of_joining_institution'])){
+		list($dd,$mm,$yy)=explode("-",$user['date_of_joining_institution']);
+		$date_of_joining_institution = $dd . "/" . $mm . "/" . $yy;
+	}else {
+		$date_of_joining_institution="";
+	}	
+	
+	
+
+	/* $joining_date  for Employees*/
+	if(!is_null($user['joining_date'])){
+		list($dd,$mm,$yy)=explode("-",$user['joining_date']);
+		$joining_date = $dd . "/" . $mm . "/" . $yy;
+	}else {
+		$joining_date="";
+	}	
+	
+
+	$dob = $user['dob'];
+
+	list($dd,$mm,$yy)=explode("-",$dob);
+	$dob = $dd . "/" . $mm . "/" . $yy;
+
+	$email = $user['email'];	
+	$branch = $user['branch'];
+	$login = $user['login'];
+	$roll_no_pf_no = $user['roll_no_pf_no'];
+	$mobile = $user['mobile'];
+	$phone = $user['phone'];
+	$address1 = $user['address1'];
+	$address2 = $user['address2'];
+	$address3 = $user['address3'];
+	$pin = $user['pin'];
+	$district = $user['district'];
+	$state = $user['state'];
+	$country = $user['country'];
+	$blood_group = $user['blood_group_id'];
+	$user_type = get_value_from_table("user_types", "name", "id", $user['user_type_id']);
+	$photo_file_name = $login . "_" . preg_replace('/[^0-9]/', '', $user['created_at']) . ".jpg"; 
+
+}
+
+
+
+
+function format_strings($str){
+
+
+		$str = preg_replace('/\s+/', ' ',$str);
+
+    $result = "";
+
+    $arr = array();
+    $pattern = '/([;:,-.\/ X])/';
+    $array = preg_split($pattern, $str, -1, PREG_SPLIT_DELIM_CAPTURE | PREG_SPLIT_NO_EMPTY);
+
+    foreach($array as $k => $v)
+        $result .= ucwords(strtolower($v));
+
+    //$result = str_replace("Mr.", "", $result); // remove Mr. in a String
+    return $result;
+
+
+
+
+	return ucwords($str,"\t\r\n\f\v,.-()@#");
+
 }
 ?>
 
